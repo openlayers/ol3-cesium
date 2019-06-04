@@ -51,7 +51,7 @@ ol3d.setEnabled(true);
 For Cesium integration see [ol-cesium-webpack-example](https://github.com/gberaudo/ol-cesium-webpack-example)
 based on the official `Cesium With Webpack` example.
 
-### As an old-fashioned independant library
+### As an old-fashioned independent library
 
 - build the library in dist/olcs.js:
 ```bash
@@ -80,7 +80,7 @@ The UMD-specific build is located here: `node_modules/ol-cesium/dist/olcesium.um
 
 Then import the parts you need. Example:
 ```js
-import OLCesium from 'olcs/OLCesium.js';
+import OLCesium from 'ol-cesium';
 const ol3d = new OLCesium({map: ol2dMap}); // ol2dMap is the ol.Map instance
 ol3d.setEnabled(true);
 ```
@@ -115,7 +115,7 @@ Limitations
 -----------
 
 - OpenLayers unmanaged layers are not discoverable and as a consequence not
-supported. Plain layers should be used instead or the synchronization managed
+supported. Plain layers should be used instead of the synchronization managed
 manually. See https://github.com/openlayers/ol-cesium/issues/350.
 
 - OpenLayers interactions are not supported in 3d. See https://github.com/openlayers/ol-cesium/issues/655.

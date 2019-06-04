@@ -1,5 +1,47 @@
 # Changelog
 
+# v 2.13 - 2021-05-20
+
+* Changes
+  * Port to CesiumJS 1.81
+  * Port dev environment to webpack5
+  * Copy canvas image when cloning overlay
+  * Use tile fonction in MVT imagery provider (handle minus, ...)
+
+# v 2.12 - 2021-01-18
+
+* Changes
+  * Delete the obsolete plugins directory.
+  * Add MVTImageryProvider, an experimental Cesium imagery provider for
+    MapBox Vector Tiles. It uses OpenLayers to render the tiles and handles
+    native OpenLayers style functions.
+  * Update to CesiumJS 1.77 and OpenLayers 6.5
+  * Expose the resolution from/to distance functions in core
+
+# v 2.11.3 - 2020-09-01
+
+* Changes
+  * Port to OpenLayers 6.4, fix grabbing issue.
+
+# v 2.11.1 - 2020-08-04
+
+* Changes
+  * Remove wrong pixelSize param from getPixelDimensions function
+
+# v 2.11 - 2020-08-04
+
+* Changes
+  * Handle some custom matrix size for WMTS
+  * Update to Cesium 1.70 and add peer dependencies
+  * Add missing 'result' param to getPixelDimensions function
+
+# v 2.10 - 2019-10-10
+
+* Changes
+  * Add a WMTS example.
+  * Port to Cesium 1.62.
+  * Port to OpenLayers 6 while staying compatible with OpenLayers 5.
+
 # v 2.9 - 2019-04-05
 
 * Changes

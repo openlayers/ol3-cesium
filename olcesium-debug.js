@@ -1,155 +1,18 @@
-var olcs_unused_var =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.library.js");
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ "./src/index.library.js":
-/*!******************************!*\
-  !*** ./src/index.library.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _olcs_OLCesium_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./olcs/OLCesium.js */ "./src/olcs/OLCesium.js");
-/* harmony import */ var _olcs_AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./olcs/AbstractSynchronizer.js */ "./src/olcs/AbstractSynchronizer.js");
-/* harmony import */ var _olcs_RasterSynchronizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./olcs/RasterSynchronizer.js */ "./src/olcs/RasterSynchronizer.js");
-/* harmony import */ var _olcs_VectorSynchronizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./olcs/VectorSynchronizer.js */ "./src/olcs/VectorSynchronizer.js");
-/* harmony import */ var _olcs_core_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./olcs/core.js */ "./src/olcs/core.js");
-/* harmony import */ var _olcs_core_OLImageryProvider_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./olcs/core/OLImageryProvider.js */ "./src/olcs/core/OLImageryProvider.js");
-/* harmony import */ var _olcs_core_VectorLayerCounterpart_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./olcs/core/VectorLayerCounterpart.js */ "./src/olcs/core/VectorLayerCounterpart.js");
-/* harmony import */ var _olcs_contrib_LazyLoader_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./olcs/contrib/LazyLoader.js */ "./src/olcs/contrib/LazyLoader.js");
-/* harmony import */ var _olcs_contrib_Manager_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./olcs/contrib/Manager.js */ "./src/olcs/contrib/Manager.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (_olcs_OLCesium_js__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
-// Using var for phantomJS
-// eslint-disable-next-line no-var
-var olcs = window['olcs'] = {};
-olcs.OLCesium = _olcs_OLCesium_js__WEBPACK_IMPORTED_MODULE_0__["default"];
-
-olcs.AbstractSynchronizer = _olcs_AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_1__["default"];
-olcs.RasterSynchronizer = _olcs_RasterSynchronizer_js__WEBPACK_IMPORTED_MODULE_2__["default"];
-olcs.VectorSynchronizer = _olcs_VectorSynchronizer_js__WEBPACK_IMPORTED_MODULE_3__["default"];
-
-olcs.core = _olcs_core_js__WEBPACK_IMPORTED_MODULE_4__["default"];
-olcs.core.OLImageryProvider = _olcs_core_OLImageryProvider_js__WEBPACK_IMPORTED_MODULE_5__["default"];
-olcs.core.VectorLayerCounterpart = _olcs_core_VectorLayerCounterpart_js__WEBPACK_IMPORTED_MODULE_6__["default"];
-
-olcs.contrib = {};
-olcs.contrib.LazyLoader = _olcs_contrib_LazyLoader_js__WEBPACK_IMPORTED_MODULE_7__["default"];
-olcs.contrib.Manager = _olcs_contrib_Manager_js__WEBPACK_IMPORTED_MODULE_8__["default"];
-
-
-/***/ }),
+var olcs_unused_var;
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/olcs/AbstractSynchronizer.js":
 /*!******************************************!*\
   !*** ./src/olcs/AbstractSynchronizer.js ***!
   \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/Observable.js */ "ol/Observable.js");
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ol/layer/Group.js */ "ol/layer/Group.js");
@@ -162,9 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AbstractSynchronizer =
-/*#__PURE__*/
-function () {
+var AbstractSynchronizer = /*#__PURE__*/function () {
   /**
    * @param {!ol.Map} map
    * @param {!Cesium.Scene} scene
@@ -243,8 +104,8 @@ function () {
    */
   ;
 
-  _proto.orderLayers = function orderLayers() {} // Ordering logics is handled in subclasses.
-
+  _proto.orderLayers = function orderLayers() {// Ordering logics is handled in subclasses.
+  }
   /**
    * Add a layer hierarchy.
    * @param {ol.layer.Base} root
@@ -264,12 +125,12 @@ function () {
     var _loop = function _loop() {
       var olLayerWithParents = fifo.splice(0, 1)[0];
       var olLayer = olLayerWithParents.layer;
-      var olLayerId = Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["getUid"])(olLayer).toString();
+      var olLayerId = (0,_util_js__WEBPACK_IMPORTED_MODULE_2__.getUid)(olLayer).toString();
       _this.olLayerListenKeys[olLayerId] = [];
       console.assert(!_this.layerMap[olLayerId]);
       var cesiumObjects = null;
 
-      if (olLayer instanceof ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_1___default.a) {
+      if (olLayer instanceof (ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_1___default())) {
         _this.listenForGroupChanges_(olLayer);
 
         if (olLayer !== _this.mapLayerGroup) {
@@ -309,7 +170,7 @@ function () {
             }
           };
 
-          _this.olLayerListenKeys[olLayerId].push(Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["olcsListen"])(layerWithParents.layer, 'change', onLayerChange));
+          _this.olLayerListenKeys[olLayerId].push((0,_util_js__WEBPACK_IMPORTED_MODULE_2__.olcsListen)(layerWithParents.layer, 'change', onLayerChange));
         }
       } // add Cesium layers
 
@@ -338,7 +199,7 @@ function () {
     var _this2 = this;
 
     this.layerMap[layerId] = cesiumObjects;
-    this.olLayerListenKeys[layerId].push(Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["olcsListen"])(layer, 'change:zIndex', function () {
+    this.olLayerListenKeys[layerId].push((0,_util_js__WEBPACK_IMPORTED_MODULE_2__.olcsListen)(layer, 'change:zIndex', function () {
       return _this2.orderLayers();
     }));
     cesiumObjects.forEach(function (cesiumObject) {
@@ -356,7 +217,7 @@ function () {
   _proto.removeAndDestroySingleLayer_ = function removeAndDestroySingleLayer_(layer) {
     var _this3 = this;
 
-    var uid = Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["getUid"])(layer).toString();
+    var uid = (0,_util_js__WEBPACK_IMPORTED_MODULE_2__.getUid)(layer).toString();
     var counterparts = this.layerMap[uid];
 
     if (!!counterparts) {
@@ -365,7 +226,7 @@ function () {
 
         _this3.destroyCesiumObject(counterpart);
       });
-      this.olLayerListenKeys[uid].forEach(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__["unByKey"]);
+      this.olLayerListenKeys[uid].forEach(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__.unByKey);
       delete this.olLayerListenKeys[uid];
     }
 
@@ -384,10 +245,10 @@ function () {
       return;
     }
 
-    var uid = Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["getUid"])(group).toString();
+    var uid = (0,_util_js__WEBPACK_IMPORTED_MODULE_2__.getUid)(group).toString();
     var keys = this.olGroupListenKeys_[uid];
     keys.forEach(function (key) {
-      Object(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__["unByKey"])(key);
+      (0,ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__.unByKey)(key);
     });
     delete this.olGroupListenKeys_[uid];
     delete this.layerMap[uid];
@@ -411,7 +272,7 @@ function () {
 
           var done = _this4.removeAndDestroySingleLayer_(olLayer);
 
-          if (olLayer instanceof ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_1___default.a) {
+          if (olLayer instanceof (ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_1___default())) {
             _this4.unlistenSingleGroup_(olLayer);
 
             if (!done) {
@@ -434,7 +295,7 @@ function () {
   ;
 
   _proto.listenForGroupChanges_ = function listenForGroupChanges_(group) {
-    var uuid = Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["getUid"])(group).toString();
+    var uuid = (0,_util_js__WEBPACK_IMPORTED_MODULE_2__.getUid)(group).toString();
     console.assert(this.olGroupListenKeys_[uuid] === undefined);
     var listenKeyArray = [];
     this.olGroupListenKeys_[uuid] = listenKeyArray; // only the keys that need to be relistened when collection changes
@@ -465,7 +326,7 @@ function () {
           listenKeyArray.splice(i, 1);
         }
 
-        Object(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__["unByKey"])(el);
+        (0,ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__.unByKey)(el);
       });
       listenAddRemove();
     }));
@@ -483,11 +344,11 @@ function () {
 
     for (objKey in this.olGroupListenKeys_) {
       var keys = this.olGroupListenKeys_[objKey];
-      keys.forEach(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__["unByKey"]);
+      keys.forEach(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__.unByKey);
     }
 
     for (objKey in this.olLayerListenKeys) {
-      this.olLayerListenKeys[objKey].forEach(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__["unByKey"]);
+      this.olLayerListenKeys[objKey].forEach(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__.unByKey);
     }
 
     this.olGroupListenKeys_ = {};
@@ -543,7 +404,7 @@ function () {
   return AbstractSynchronizer;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (AbstractSynchronizer);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AbstractSynchronizer);
 
 /***/ }),
 
@@ -551,17 +412,22 @@ function () {
 /*!************************************!*\
   !*** ./src/olcs/AutoRenderLoop.js ***!
   \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function _createForOfIteratorHelperLoose(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (it) return (it = it.call(o)).next.bind(it); if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; return function () { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 /**
  * @module olcs.AutoRenderLoop
  */
-var AutoRenderLoop =
-/*#__PURE__*/
-function () {
+var AutoRenderLoop = /*#__PURE__*/function () {
   /**
    * @constructor
    * @param {olcs.OLCesium} ol3d
@@ -585,19 +451,8 @@ function () {
     this.scene_.requestRenderMode = true;
     this.scene_.maximumRenderTimeChange = 1000;
 
-    for (var _iterator = this.repaintEventNames_, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-      var _ref;
-
-      if (_isArray) {
-        if (_i >= _iterator.length) break;
-        _ref = _iterator[_i++];
-      } else {
-        _i = _iterator.next();
-        if (_i.done) break;
-        _ref = _i.value;
-      }
-
-      var repaintKey = _ref;
+    for (var _iterator = _createForOfIteratorHelperLoose(this.repaintEventNames_), _step; !(_step = _iterator()).done;) {
+      var repaintKey = _step.value;
       this.canvas_.addEventListener(repaintKey, this._boundNotifyRepaintRequired, false);
     }
 
@@ -611,19 +466,8 @@ function () {
   ;
 
   _proto.disable = function disable() {
-    for (var _iterator2 = this.repaintEventNames_, _isArray2 = Array.isArray(_iterator2), _i2 = 0, _iterator2 = _isArray2 ? _iterator2 : _iterator2[Symbol.iterator]();;) {
-      var _ref2;
-
-      if (_isArray2) {
-        if (_i2 >= _iterator2.length) break;
-        _ref2 = _iterator2[_i2++];
-      } else {
-        _i2 = _iterator2.next();
-        if (_i2.done) break;
-        _ref2 = _i2.value;
-      }
-
-      var repaintKey = _ref2;
+    for (var _iterator2 = _createForOfIteratorHelperLoose(this.repaintEventNames_), _step2; !(_step2 = _iterator2()).done;) {
+      var repaintKey = _step2.value;
       this.canvas_.removeEventListener(repaintKey, this._boundNotifyRepaintRequired, false);
     }
 
@@ -649,7 +493,7 @@ function () {
   return AutoRenderLoop;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (AutoRenderLoop);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AutoRenderLoop);
 
 /***/ }),
 
@@ -657,11 +501,12 @@ function () {
 /*!****************************!*\
   !*** ./src/olcs/Camera.js ***!
   \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/Observable.js */ "ol/Observable.js");
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./math.js */ "./src/olcs/math.js");
@@ -676,9 +521,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Camera =
-/*#__PURE__*/
-function () {
+var Camera = /*#__PURE__*/function () {
   /**
    * This object takes care of additional 3d-specific properties of the view and
    * ensures proper synchronization with the underlying raw Cesium.Camera object.
@@ -792,15 +635,15 @@ function () {
     var _this2 = this;
 
     if (this.view_) {
-      Object(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__["unByKey"])(this.viewListenKey_);
+      (0,ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__.unByKey)(this.viewListenKey_);
       this.viewListenKey_ = null;
     }
 
     this.view_ = view;
 
     if (view) {
-      var toLonLat = Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_2__["getTransform"])(view.getProjection(), 'EPSG:4326');
-      var fromLonLat = Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_2__["getTransform"])('EPSG:4326', view.getProjection());
+      var toLonLat = (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_2__.getTransform)(view.getProjection(), 'EPSG:4326');
+      var fromLonLat = (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_2__.getTransform)('EPSG:4326', view.getProjection());
       console.assert(toLonLat && fromLonLat);
       this.toLonLat_ = toLonLat;
       this.fromLonLat_ = fromLonLat;
@@ -932,7 +775,7 @@ function () {
 
     var ll = this.toLonLat_(position);
     console.assert(ll);
-    var carto = new Cesium.Cartographic(Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toRadians"])(ll[0]), Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toRadians"])(ll[1]), this.getAltitude());
+    var carto = new Cesium.Cartographic((0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toRadians)(ll[0]), (0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toRadians)(ll[1]), this.getAltitude());
     this.cam_.setView({
       destination: Cesium.Ellipsoid.WGS84.cartographicToCartesian(carto)
     });
@@ -951,7 +794,7 @@ function () {
     }
 
     var carto = Cesium.Ellipsoid.WGS84.cartesianToCartographic(this.cam_.position);
-    var pos = this.fromLonLat_([Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toDegrees"])(carto.longitude), Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toDegrees"])(carto.latitude)]);
+    var pos = this.fromLonLat_([(0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toDegrees)(carto.longitude), (0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toDegrees)(carto.latitude)]);
     console.assert(pos);
     return pos;
   }
@@ -997,7 +840,7 @@ function () {
 
     var ll = this.toLonLat_(center);
     console.assert(ll);
-    var carto = new Cesium.Cartographic(Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toRadians"])(ll[0]), Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toRadians"])(ll[1]));
+    var carto = new Cesium.Cartographic((0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toRadians)(ll[0]), (0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toRadians)(ll[1]));
 
     if (this.scene_.globe) {
       var height = this.scene_.globe.getHeight(carto);
@@ -1039,7 +882,7 @@ function () {
     var ll = this.toLonLat_(center);
     console.assert(ll);
     var resolution = this.view_.getResolution();
-    this.distance_ = this.calcDistanceForResolution(resolution || 0, Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toRadians"])(ll[1]));
+    this.distance_ = this.calcDistanceForResolution(resolution || 0, (0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toRadians)(ll[1]));
     this.updateCamera_();
   }
   /**
@@ -1058,7 +901,7 @@ function () {
 
     var ellipsoid = Cesium.Ellipsoid.WGS84;
     var scene = this.scene_;
-    var target = _core_js__WEBPACK_IMPORTED_MODULE_3__["default"].pickCenterPoint(scene);
+    var target = _core_js__WEBPACK_IMPORTED_MODULE_3__.default.pickCenterPoint(scene);
     var bestTarget = target;
 
     if (!bestTarget) {
@@ -1072,7 +915,7 @@ function () {
 
     this.distance_ = Cesium.Cartesian3.distance(bestTarget, this.cam_.position);
     var bestTargetCartographic = ellipsoid.cartesianToCartographic(bestTarget);
-    this.view_.setCenter(this.fromLonLat_([Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toDegrees"])(bestTargetCartographic.longitude), Object(_math_js__WEBPACK_IMPORTED_MODULE_1__["toDegrees"])(bestTargetCartographic.latitude)])); // resolution
+    this.view_.setCenter(this.fromLonLat_([(0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toDegrees)(bestTargetCartographic.longitude), (0,_math_js__WEBPACK_IMPORTED_MODULE_1__.toDegrees)(bestTargetCartographic.latitude)])); // resolution
 
     this.view_.setResolution(this.calcResolutionForDistance(this.distance_, bestTargetCartographic ? bestTargetCartographic.latitude : 0));
     /*
@@ -1137,31 +980,7 @@ function () {
   ;
 
   _proto.calcDistanceForResolution = function calcDistanceForResolution(resolution, latitude) {
-    var canvas = this.scene_.canvas;
-    var fovy = this.cam_.frustum.fovy; // vertical field of view
-
-    console.assert(!isNaN(fovy));
-    var metersPerUnit = this.view_.getProjection().getMetersPerUnit(); // number of "map units" visible in 2D (vertically)
-
-    var visibleMapUnits = resolution * canvas.clientHeight; // The metersPerUnit does not take latitude into account, but it should
-    // be lower with increasing latitude -- we have to compensate.
-    // In 3D it is not possible to maintain the resolution at more than one point,
-    // so it only makes sense to use the latitude of the "target" point.
-
-    var relativeCircumference = Math.cos(Math.abs(latitude)); // how many meters should be visible in 3D
-
-    var visibleMeters = visibleMapUnits * metersPerUnit * relativeCircumference; // distance required to view the calculated length in meters
-    //
-    //  fovy/2
-    //    |\
-    //  x | \
-    //    |--\
-    // visibleMeters/2
-
-    var requiredDistance = visibleMeters / 2 / Math.tan(fovy / 2); // NOTE: This calculation is not absolutely precise, because metersPerUnit
-    // is a great simplification. It does not take ellipsoid/terrain into account.
-
-    return requiredDistance;
+    return (0,_core_js__WEBPACK_IMPORTED_MODULE_3__.calcDistanceForResolution)(resolution, latitude, this.scene_, this.view_.getProjection());
   }
   /**
    * calculate the resolution based on a distance(camera to position) and latitude value
@@ -1173,21 +992,13 @@ function () {
   ;
 
   _proto.calcResolutionForDistance = function calcResolutionForDistance(distance, latitude) {
-    // See the reverse calculation (calcDistanceForResolution) for details
-    var canvas = this.scene_.canvas;
-    var fovy = this.cam_.frustum.fovy;
-    var metersPerUnit = this.view_.getProjection().getMetersPerUnit();
-    var visibleMeters = 2 * distance * Math.tan(fovy / 2);
-    var relativeCircumference = Math.cos(Math.abs(latitude));
-    var visibleMapUnits = visibleMeters / metersPerUnit / relativeCircumference;
-    var resolution = visibleMapUnits / canvas.clientHeight;
-    return resolution;
+    return (0,_core_js__WEBPACK_IMPORTED_MODULE_3__.calcResolutionForDistance)(distance, latitude, this.scene_, this.view_.getProjection());
   };
 
   return Camera;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (Camera);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Camera);
 
 /***/ }),
 
@@ -1195,11 +1006,12 @@ function () {
 /*!**************************************!*\
   !*** ./src/olcs/FeatureConverter.js ***!
   \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_geom_Geometry_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/geom/Geometry.js */ "ol/geom/Geometry.js");
 /* harmony import */ var ol_geom_Geometry_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_geom_Geometry_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ol_style_Icon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ol/style/Icon.js */ "ol/style/Icon.js");
@@ -1210,13 +1022,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ol_source_Cluster_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(ol_source_Cluster_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var ol_geom_Polygon_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ol/geom/Polygon.js */ "ol/geom/Polygon.js");
 /* harmony import */ var ol_geom_Polygon_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(ol_geom_Polygon_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var ol_extent_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ol/extent.js */ "ol/extent.js");
+/* harmony import */ var ol_extent_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ol/extent.js */ "ol/extent");
 /* harmony import */ var ol_extent_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(ol_extent_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var ol_geom_SimpleGeometry_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ol/geom/SimpleGeometry.js */ "ol/geom/SimpleGeometry.js");
 /* harmony import */ var ol_geom_SimpleGeometry_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ol_geom_SimpleGeometry_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _core_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./core.js */ "./src/olcs/core.js");
 /* harmony import */ var _core_VectorLayerCounterpart_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./core/VectorLayerCounterpart.js */ "./src/olcs/core/VectorLayerCounterpart.js");
 /* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./util.js */ "./src/olcs/util.js");
+function _createForOfIteratorHelperLoose(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (it) return (it = it.call(o)).next.bind(it); if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; return function () { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 /**
  * @module olcs.FeatureConverter
  */
@@ -1236,9 +1054,7 @@ __webpack_require__.r(__webpack_exports__);
  * @property {Cesium.ModelFromGltfOptions} cesiumOptions
  */
 
-var FeatureConverter =
-/*#__PURE__*/
-function () {
+var FeatureConverter = /*#__PURE__*/function () {
   /**
    * Concrete base class for converting from OpenLayers3 vectors to Cesium
    * primitives.
@@ -1277,15 +1093,15 @@ function () {
 
   _proto.onRemoveOrClearFeature_ = function onRemoveOrClearFeature_(evt) {
     var source = evt.target;
-    console.assert(source instanceof ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_2___default.a);
-    var cancellers = _util_js__WEBPACK_IMPORTED_MODULE_9__["default"].obj(source)['olcs_cancellers'];
+    console.assert(source instanceof (ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_2___default()));
+    var cancellers = _util_js__WEBPACK_IMPORTED_MODULE_9__.default.obj(source)['olcs_cancellers'];
 
     if (cancellers) {
       var feature = evt.feature;
 
       if (feature) {
         // remove
-        var id = Object(_util_js__WEBPACK_IMPORTED_MODULE_9__["getUid"])(feature);
+        var id = (0,_util_js__WEBPACK_IMPORTED_MODULE_9__.getUid)(feature);
         var canceller = cancellers[id];
 
         if (canceller) {
@@ -1300,7 +1116,7 @@ function () {
           }
         }
 
-        _util_js__WEBPACK_IMPORTED_MODULE_9__["default"].obj(source)['olcs_cancellers'] = {};
+        _util_js__WEBPACK_IMPORTED_MODULE_9__.default.obj(source)['olcs_cancellers'] = {};
       }
     }
   }
@@ -1430,7 +1246,7 @@ function () {
       olColor = fillColor;
     }
 
-    return _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].convertColorToCesium(olColor);
+    return _core_js__WEBPACK_IMPORTED_MODULE_7__.default.convertColorToCesium(olColor);
   }
   /**
    * Return the width of stroke from a plain ol style.
@@ -1560,7 +1376,7 @@ function () {
   _proto.olCircleGeometryToCesium = function olCircleGeometryToCesium(layer, feature, olGeometry, projection, olStyle) {
     var _this = this;
 
-    olGeometry = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].olGeometryCloneTo4326(olGeometry, projection);
+    olGeometry = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.olGeometryCloneTo4326(olGeometry, projection);
     console.assert(olGeometry.getType() == 'Circle'); // ol.Coordinate
 
     var center = olGeometry.getCenter();
@@ -1568,8 +1384,8 @@ function () {
     var point = center.slice();
     point[0] += olGeometry.getRadius(); // Cesium
 
-    center = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].ol4326CoordinateToCesiumCartesian(center);
-    point = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].ol4326CoordinateToCesiumCartesian(point); // Accurate computation of straight distance
+    center = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.ol4326CoordinateToCesiumCartesian(center);
+    point = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.ol4326CoordinateToCesiumCartesian(point); // Accurate computation of straight distance
 
     var radius = Cesium.Cartesian3.distance(center, point);
     var fillGeometry = new Cesium.CircleGeometry({
@@ -1584,10 +1400,10 @@ function () {
       var width = this.extractLineWidthFromOlStyle(olStyle);
 
       if (width) {
-        var circlePolygon = Object(ol_geom_Polygon_js__WEBPACK_IMPORTED_MODULE_4__["circular"])(olGeometry.getCenter(), radius);
-        var positions = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].ol4326CoordinateArrayToCsCartesians(circlePolygon.getLinearRing(0).getCoordinates());
+        var circlePolygon = (0,ol_geom_Polygon_js__WEBPACK_IMPORTED_MODULE_4__.circular)(olGeometry.getCenter(), radius);
+        var positions = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.ol4326CoordinateArrayToCsCartesians(circlePolygon.getLinearRing(0).getCoordinates());
 
-        if (!Object(_util_js__WEBPACK_IMPORTED_MODULE_9__["isGroundPolylinePrimitiveSupported"])(this.scene)) {
+        if (!(0,_util_js__WEBPACK_IMPORTED_MODULE_9__.isGroundPolylinePrimitiveSupported)(this.scene)) {
           var color = this.extractColorFromOlStyle(olStyle, true);
           outlinePrimitive = this.createStackedGroundCorridors(layer, feature, width, color, positions);
         } else {
@@ -1659,19 +1475,8 @@ function () {
         vertexFormat: Cesium.VertexFormat.POSITION_ONLY
       };
 
-      for (var _iterator = positions, _isArray = Array.isArray(_iterator), _i2 = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-        var _ref;
-
-        if (_isArray) {
-          if (_i2 >= _iterator.length) break;
-          _ref = _iterator[_i2++];
-        } else {
-          _i2 = _iterator.next();
-          if (_i2.done) break;
-          _ref = _i2.value;
-        }
-
-        var linePositions = _ref;
+      for (var _iterator = _createForOfIteratorHelperLoose(positions), _step; !(_step = _iterator()).done;) {
+        var linePositions = _step.value;
         geometryOptions.positions = linePositions;
         geometryInstances.push(new Cesium.GeometryInstance({
           geometry: new Cesium.CorridorGeometry(geometryOptions),
@@ -1705,14 +1510,14 @@ function () {
   _proto.olLineStringGeometryToCesium = function olLineStringGeometryToCesium(layer, feature, olGeometry, projection, olStyle) {
     var _this2 = this;
 
-    olGeometry = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].olGeometryCloneTo4326(olGeometry, projection);
+    olGeometry = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.olGeometryCloneTo4326(olGeometry, projection);
     console.assert(olGeometry.getType() == 'LineString');
-    var positions = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].ol4326CoordinateArrayToCsCartesians(olGeometry.getCoordinates());
+    var positions = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.ol4326CoordinateArrayToCsCartesians(olGeometry.getCoordinates());
     var width = this.extractLineWidthFromOlStyle(olStyle);
     var outlinePrimitive;
     var heightReference = this.getHeightReference(layer, feature, olGeometry);
 
-    if (heightReference === Cesium.HeightReference.CLAMP_TO_GROUND && !Object(_util_js__WEBPACK_IMPORTED_MODULE_9__["isGroundPolylinePrimitiveSupported"])(this.scene)) {
+    if (heightReference === Cesium.HeightReference.CLAMP_TO_GROUND && !(0,_util_js__WEBPACK_IMPORTED_MODULE_9__.isGroundPolylinePrimitiveSupported)(this.scene)) {
       var color = this.extractColorFromOlStyle(olStyle, true);
       outlinePrimitive = this.createStackedGroundCorridors(layer, feature, width, color, positions);
     } else {
@@ -1767,7 +1572,7 @@ function () {
   _proto.olPolygonGeometryToCesium = function olPolygonGeometryToCesium(layer, feature, olGeometry, projection, olStyle) {
     var _this3 = this;
 
-    olGeometry = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].olGeometryCloneTo4326(olGeometry, projection);
+    olGeometry = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.olGeometryCloneTo4326(olGeometry, projection);
     console.assert(olGeometry.getType() == 'Polygon');
     var heightReference = this.getHeightReference(layer, feature, olGeometry);
     var fillGeometry, outlineGeometry, outlinePrimitive;
@@ -1776,7 +1581,7 @@ function () {
       // Create a rectangle according to the longitude and latitude curves
       var coordinates = olGeometry.getCoordinates()[0]; // Extract the West, South, East, North coordinates
 
-      var extent = Object(ol_extent_js__WEBPACK_IMPORTED_MODULE_5__["boundingExtent"])(coordinates);
+      var extent = (0,ol_extent_js__WEBPACK_IMPORTED_MODULE_5__.boundingExtent)(coordinates);
       var rectangle = Cesium.Rectangle.fromDegrees(extent[0], extent[1], extent[2], extent[3]); // Extract the average height of the vertices
 
       var maxHeight = 0.0;
@@ -1807,7 +1612,7 @@ function () {
 
       for (var i = 0; i < rings.length; ++i) {
         var olPos = rings[i].getCoordinates();
-        var positions = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].ol4326CoordinateArrayToCsCartesians(olPos);
+        var positions = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.ol4326CoordinateArrayToCsCartesians(olPos);
         console.assert(positions && positions.length > 0);
 
         if (i == 0) {
@@ -1839,12 +1644,12 @@ function () {
           var _positions = [hierarchy.positions];
 
           if (hierarchy.holes) {
-            for (var _i3 = 0; _i3 < hierarchy.holes.length; ++_i3) {
-              _positions.push(hierarchy.holes[_i3].positions);
+            for (var _i2 = 0; _i2 < hierarchy.holes.length; ++_i2) {
+              _positions.push(hierarchy.holes[_i2].positions);
             }
           }
 
-          if (!Object(_util_js__WEBPACK_IMPORTED_MODULE_9__["isGroundPolylinePrimitiveSupported"])(this.scene)) {
+          if (!(0,_util_js__WEBPACK_IMPORTED_MODULE_9__.isGroundPolylinePrimitiveSupported)(this.scene)) {
             var color = this.extractColorFromOlStyle(olStyle, true);
             outlinePrimitive = this.createStackedGroundCorridors(layer, feature, width, color, _positions);
           } else {
@@ -1854,8 +1659,8 @@ function () {
             });
             var geometryInstances = [];
 
-            for (var _i4 = 0, _positions2 = _positions; _i4 < _positions2.length; _i4++) {
-              var linePositions = _positions2[_i4];
+            for (var _iterator2 = _createForOfIteratorHelperLoose(_positions), _step2; !(_step2 = _iterator2()).done;) {
+              var linePositions = _step2.value;
               var polylineGeometry = new Cesium.GroundPolylineGeometry({
                 positions: linePositions,
                 width: width
@@ -1942,7 +1747,7 @@ function () {
   ;
 
   _proto.createBillboardFromImage = function createBillboardFromImage(layer, feature, olGeometry, projection, style, imageStyle, billboards, opt_newBillboardCallback) {
-    if (imageStyle instanceof ol_style_Icon_js__WEBPACK_IMPORTED_MODULE_1___default.a) {
+    if (imageStyle instanceof (ol_style_Icon_js__WEBPACK_IMPORTED_MODULE_1___default())) {
       // make sure the image is scheduled for load
       imageStyle.load();
     }
@@ -1963,7 +1768,7 @@ function () {
       }
 
       var center = olGeometry.getCoordinates();
-      var position = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].ol4326CoordinateToCesiumCartesian(center);
+      var position = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.ol4326CoordinateToCesiumCartesian(center);
       var color;
       var opacity = imageStyle.getOpacity();
 
@@ -1971,6 +1776,7 @@ function () {
         color = new Cesium.Color(1.0, 1.0, 1.0, opacity);
       }
 
+      var scale = imageStyle.getScale();
       var heightReference = this.getHeightReference(layer, feature, olGeometry);
       var bbOptions =
       /** @type {Cesium.optionsBillboardCollectionAdd} */
@@ -1978,16 +1784,18 @@ function () {
         // always update Cesium externs before adding a property
         image: image,
         color: color,
-        scale: imageStyle.getScale(),
+        scale: scale,
         heightReference: heightReference,
         position: position
-      };
+      }; // merge in cesium options from openlayers feature
 
-      if (imageStyle instanceof ol_style_Icon_js__WEBPACK_IMPORTED_MODULE_1___default.a) {
+      Object.assign(bbOptions, feature.get('cesiumOptions'));
+
+      if (imageStyle instanceof (ol_style_Icon_js__WEBPACK_IMPORTED_MODULE_1___default())) {
         var anchor = imageStyle.getAnchor();
 
         if (anchor) {
-          bbOptions.pixelOffset = new Cesium.Cartesian2(image.width / 2 - anchor[0], image.height / 2 - anchor[1]);
+          bbOptions.pixelOffset = new Cesium.Cartesian2((image.width / 2 - anchor[0]) * scale, (image.height / 2 - anchor[1]) * scale);
         }
       }
 
@@ -2008,13 +1816,13 @@ function () {
       };
 
       source.on(['removefeature', 'clear'], this.boundOnRemoveOrClearFeatureListener_);
-      var cancellers = _util_js__WEBPACK_IMPORTED_MODULE_9__["default"].obj(source)['olcs_cancellers'];
+      var cancellers = _util_js__WEBPACK_IMPORTED_MODULE_9__.default.obj(source)['olcs_cancellers'];
 
       if (!cancellers) {
-        cancellers = _util_js__WEBPACK_IMPORTED_MODULE_9__["default"].obj(source)['olcs_cancellers'] = {};
+        cancellers = _util_js__WEBPACK_IMPORTED_MODULE_9__.default.obj(source)['olcs_cancellers'] = {};
       }
 
-      var fuid = Object(_util_js__WEBPACK_IMPORTED_MODULE_9__["getUid"])(feature);
+      var fuid = (0,_util_js__WEBPACK_IMPORTED_MODULE_9__.getUid)(feature);
 
       if (cancellers[fuid]) {
         // When the feature change quickly, a canceller may still be present so
@@ -2055,7 +1863,7 @@ function () {
 
   _proto.olPointGeometryToCesium = function olPointGeometryToCesium(layer, feature, olGeometry, projection, style, billboards, opt_newBillboardCallback) {
     console.assert(olGeometry.getType() == 'Point');
-    olGeometry = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].olGeometryCloneTo4326(olGeometry, projection);
+    olGeometry = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.olGeometryCloneTo4326(olGeometry, projection);
     var modelPrimitive = null;
     var imageStyle = style.getImage();
 
@@ -2191,9 +1999,9 @@ function () {
     }); // TODO: export and use the text draw position from OpenLayers .
     // See src/ol/render/vector.js
 
-    var extentCenter = Object(ol_extent_js__WEBPACK_IMPORTED_MODULE_5__["getCenter"])(geometry.getExtent());
+    var extentCenter = (0,ol_extent_js__WEBPACK_IMPORTED_MODULE_5__.getCenter)(geometry.getExtent());
 
-    if (geometry instanceof ol_geom_SimpleGeometry_js__WEBPACK_IMPORTED_MODULE_6___default.a) {
+    if (geometry instanceof (ol_geom_SimpleGeometry_js__WEBPACK_IMPORTED_MODULE_6___default())) {
       var first = geometry.getFirstCoordinate();
       extentCenter[2] = first.length == 3 ? first[2] : 0.0;
     }
@@ -2201,7 +2009,7 @@ function () {
     var options =
     /** @type {Cesium.optionsLabelCollection} */
     {};
-    options.position = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].ol4326CoordinateToCesiumCartesian(extentCenter);
+    options.position = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.ol4326CoordinateToCesiumCartesian(extentCenter);
     options.text = text;
     options.heightReference = this.getHeightReference(layer, feature, geometry);
     var offsetX = style.getOffsetX();
@@ -2304,7 +2112,7 @@ function () {
     }
 
     var color = outline ? stroke.getColor() : fill.getColor();
-    color = _core_js__WEBPACK_IMPORTED_MODULE_7__["default"].convertColorToCesium(color);
+    color = _core_js__WEBPACK_IMPORTED_MODULE_7__.default.convertColorToCesium(color);
 
     if (outline && stroke.getLineDash()) {
       return Cesium.Material.fromType('Stripe', {
@@ -2383,14 +2191,14 @@ function () {
     /** @type {!ol.geom.Geometry} */
     feature.get('olcs.3d_geometry');
 
-    if (geom3d && geom3d instanceof ol_geom_Geometry_js__WEBPACK_IMPORTED_MODULE_0___default.a) {
+    if (geom3d && geom3d instanceof (ol_geom_Geometry_js__WEBPACK_IMPORTED_MODULE_0___default())) {
       return geom3d;
     }
 
     if (style) {
       var geomFuncRes = style.getGeometryFunction()(feature);
 
-      if (geomFuncRes instanceof ol_geom_Geometry_js__WEBPACK_IMPORTED_MODULE_0___default.a) {
+      if (geomFuncRes instanceof (ol_geom_Geometry_js__WEBPACK_IMPORTED_MODULE_0___default())) {
         return geomFuncRes;
       }
     }
@@ -2423,12 +2231,12 @@ function () {
     var proj = context.projection;
 
     var newBillboardAddedCallback = function newBillboardAddedCallback(bb) {
-      var featureBb = context.featureToCesiumMap[Object(_util_js__WEBPACK_IMPORTED_MODULE_9__["getUid"])(feature)];
+      var featureBb = context.featureToCesiumMap[(0,_util_js__WEBPACK_IMPORTED_MODULE_9__.getUid)(feature)];
 
       if (featureBb instanceof Array) {
         featureBb.push(bb);
       } else {
-        context.featureToCesiumMap[Object(_util_js__WEBPACK_IMPORTED_MODULE_9__["getUid"])(feature)] = [bb];
+        context.featureToCesiumMap[(0,_util_js__WEBPACK_IMPORTED_MODULE_9__.getUid)(feature)] = [bb];
       }
     };
 
@@ -2526,13 +2334,13 @@ function () {
 
     var source = olLayer.getSource();
 
-    if (source instanceof ol_source_Cluster_js__WEBPACK_IMPORTED_MODULE_3___default.a) {
+    if (source instanceof (ol_source_Cluster_js__WEBPACK_IMPORTED_MODULE_3___default())) {
       source = source.getSource();
     }
 
-    console.assert(source instanceof ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_2___default.a);
+    console.assert(source instanceof (ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_2___default()));
     var features = source.getFeatures();
-    var counterpart = new _core_VectorLayerCounterpart_js__WEBPACK_IMPORTED_MODULE_8__["default"](proj, this.scene);
+    var counterpart = new _core_VectorLayerCounterpart_js__WEBPACK_IMPORTED_MODULE_8__.default(proj, this.scene);
     var context = counterpart.context;
 
     for (var i = 0; i < features.length; ++i) {
@@ -2560,19 +2368,19 @@ function () {
 
       var primitives = null;
 
-      for (var _i5 = 0; _i5 < styles.length; _i5++) {
-        var prims = this.olFeatureToCesium(olLayer, feature, styles[_i5], context);
+      for (var _i3 = 0; _i3 < styles.length; _i3++) {
+        var prims = this.olFeatureToCesium(olLayer, feature, styles[_i3], context);
 
         if (prims) {
           if (!primitives) {
             primitives = prims;
           } else if (prims) {
-            var _i6 = 0,
+            var _i4 = 0,
                 prim = void 0;
 
-            while (prim = prims.get(_i6)) {
+            while (prim = prims.get(_i4)) {
               primitives.add(prim);
-              _i6++;
+              _i4++;
             }
           }
         }
@@ -2582,7 +2390,7 @@ function () {
         continue;
       }
 
-      featurePrimitiveMap[Object(_util_js__WEBPACK_IMPORTED_MODULE_9__["getUid"])(feature)] = primitives;
+      featurePrimitiveMap[(0,_util_js__WEBPACK_IMPORTED_MODULE_9__.getUid)(feature)] = primitives;
       counterpart.getRootPrimitive().add(primitives);
     }
 
@@ -2614,7 +2422,7 @@ function () {
     var layerStyle = layer.getStyleFunction();
     var styles = this.computePlainStyle(layer, feature, layerStyle, resolution);
 
-    if (!styles.length) {
+    if (!styles || !styles.length) {
       // only 'render' features with a style
       return null;
     }
@@ -2632,12 +2440,12 @@ function () {
       if (!primitives) {
         primitives = prims;
       } else if (prims) {
-        var _i7 = 0,
+        var _i5 = 0,
             prim = void 0;
 
-        while (prim = prims.get(_i7)) {
+        while (prim = prims.get(_i5)) {
           primitives.add(prim);
-          _i7++;
+          _i5++;
         }
       }
     }
@@ -2648,7 +2456,232 @@ function () {
   return FeatureConverter;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (FeatureConverter);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FeatureConverter);
+
+/***/ }),
+
+/***/ "./src/olcs/MVTImageryProvider.js":
+/*!****************************************!*\
+  !*** ./src/olcs/MVTImageryProvider.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MVTImageryProvider)
+/* harmony export */ });
+/* harmony import */ var ol_format_MVT_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/format/MVT.js */ "ol/format/MVT.js");
+/* harmony import */ var ol_format_MVT_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_format_MVT_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ol_style_Style_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ol/style/Style.js */ "ol/style/Style.js");
+/* harmony import */ var ol_style_Style_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ol_style_Style_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ol_style_Stroke_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ol/style/Stroke.js */ "ol/style/Stroke.js");
+/* harmony import */ var ol_style_Stroke_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ol_style_Stroke_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var ol_render_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ol/render.js */ "ol/render.js");
+/* harmony import */ var ol_render_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(ol_render_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var ol_proj_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ol/proj.js */ "ol/proj.js");
+/* harmony import */ var ol_proj_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(ol_proj_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var ol_util_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ol/util.js */ "ol/util.js");
+/* harmony import */ var ol_util_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(ol_util_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var ol_structs_LRUCache_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ol/structs/LRUCache.js */ "ol/structs/LRUCache.js");
+/* harmony import */ var ol_structs_LRUCache_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ol_structs_LRUCache_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var ol_tilegrid_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ol/tilegrid.js */ "ol/tilegrid.js");
+/* harmony import */ var ol_tilegrid_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(ol_tilegrid_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var ol_tileurlfunction_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ol/tileurlfunction.js */ "ol/tileurlfunction.js");
+/* harmony import */ var ol_tileurlfunction_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(ol_tileurlfunction_js__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+
+
+
+var format = new (ol_format_MVT_js__WEBPACK_IMPORTED_MODULE_0___default())();
+var styles = [new (ol_style_Style_js__WEBPACK_IMPORTED_MODULE_1___default())({
+  stroke: new (ol_style_Stroke_js__WEBPACK_IMPORTED_MODULE_2___default())({
+    color: 'blue',
+    width: 2
+  })
+})];
+
+var MVTImageryProvider = /*#__PURE__*/function () {
+  function MVTImageryProvider(options) {
+    this.urls = options.urls;
+    this.ready = true;
+    this.readyPromise = Promise.resolve(true);
+    this.tileWidth = 256;
+    this.tileHeight = 256;
+    this.maximumLevel = options.maximumLevel || 20;
+    this.minimumLevel = options.minimumLevel || 0;
+    this.tilingScheme = new Cesium.WebMercatorTilingScheme();
+    this.rectangle = options.rectangle || this.tilingScheme.rectangle;
+    this.errorEvent = new Cesium.Event();
+    this.credit = options.credit;
+    this.hasAlphaChannel = true;
+
+    this.styleFunction_ = options.styleFunction || function () {
+      return styles;
+    };
+
+    this.projection_ = (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_4__.get)('EPSG:3857');
+    this.emptyCanvas_ = document.createElement('canvas');
+    this.emptyCanvas_.width = 1;
+    this.emptyCanvas_.height = 1;
+    this.tileRectangle_ = new Cesium.Rectangle();
+    var cacheSize = options.cacheSize !== undefined ? options.cacheSize : 50;
+    this.tileCache = new (ol_structs_LRUCache_js__WEBPACK_IMPORTED_MODULE_6___default())(cacheSize);
+    this.featureCache = options.featureCache || new (ol_structs_LRUCache_js__WEBPACK_IMPORTED_MODULE_6___default())(cacheSize); // to avoid too frequent cache grooming we allow x2 capacity
+
+    var tileGrid = (0,ol_tilegrid_js__WEBPACK_IMPORTED_MODULE_7__.getForProjection)(this.projection_);
+    this.tileFunction_ = (0,ol_tileurlfunction_js__WEBPACK_IMPORTED_MODULE_8__.createFromTemplates)(this.urls, tileGrid);
+  }
+
+  var _proto = MVTImageryProvider.prototype;
+
+  _proto.getTileCredits = function getTileCredits() {
+    return [];
+  };
+
+  _proto.pickFeatures = function pickFeatures() {};
+
+  _proto.getTileFeatures = function getTileFeatures(z, x, y) {
+    var _this = this;
+
+    var cacheKey = this.getCacheKey_(z, x, y);
+    var promise;
+
+    if (this.featureCache.containsKey(cacheKey)) {
+      promise = this.featureCache.get(cacheKey);
+    }
+
+    if (!promise) {
+      var url = this.getUrl_(z, x, y);
+      promise = fetch(url).then(function (r) {
+        return r.ok ? r : Promise.reject(r);
+      }).then(function (r) {
+        return r.arrayBuffer();
+      }).then(function (buffer) {
+        return _this.readFeaturesFromBuffer(buffer);
+      });
+      this.featureCache.set(cacheKey, promise);
+
+      if (this.featureCache.getCount() > 2 * this.featureCache.highWaterMark) {
+        while (this.featureCache.canExpireCache()) {
+          this.featureCache.pop();
+        }
+      }
+    }
+
+    return promise;
+  };
+
+  _proto.readFeaturesFromBuffer = function readFeaturesFromBuffer(buffer) {
+    var _this2 = this;
+
+    var options;
+
+    if (ol_util_js__WEBPACK_IMPORTED_MODULE_5__.VERSION <= '6.4.4') {
+      // See https://github.com/openlayers/openlayers/pull/11540
+      options = {
+        extent: [0, 0, 4096, 4096],
+        dataProjection: format.dataProjection,
+        featureProjection: format.dataProjection
+      };
+    }
+
+    var features = format.readFeatures(buffer, options);
+    var scaleFactor = this.tileWidth / 4096;
+    features.forEach(function (f) {
+      var flatCoordinates = f.getFlatCoordinates();
+      var flip = false;
+
+      for (var i = 0; i < flatCoordinates.length; ++i) {
+        flatCoordinates[i] *= scaleFactor;
+
+        if (flip) {
+          // FIXME: why do we need this now?
+          flatCoordinates[i] = _this2.tileWidth - flatCoordinates[i];
+        }
+
+        if (ol_util_js__WEBPACK_IMPORTED_MODULE_5__.VERSION <= '6.4.4') {
+          flip = !flip;
+        }
+      }
+    });
+    return features;
+  };
+
+  _proto.getUrl_ = function getUrl_(z, x, y) {
+    var url = this.tileFunction_([z, x, y]);
+    return url;
+  };
+
+  _proto.getCacheKey_ = function getCacheKey_(z, x, y) {
+    return z + "_" + x + "_" + y;
+  };
+
+  _proto.requestImage = function requestImage(x, y, z, request) {
+    var _this3 = this;
+
+    if (z < this.minimumLevel) {
+      return this.emptyCanvas_;
+    }
+
+    try {
+      var cacheKey = this.getCacheKey_(z, x, y);
+      var promise;
+
+      if (this.tileCache.containsKey(cacheKey)) {
+        promise = this.tileCache.get(cacheKey);
+      }
+
+      if (!promise) {
+        promise = this.getTileFeatures(z, x, y).then(function (features) {
+          // FIXME: here we suppose the 2D projection is in meters
+          _this3.tilingScheme.tileXYToNativeRectangle(x, y, z, _this3.tileRectangle_);
+
+          var resolution = (_this3.tileRectangle_.east - _this3.tileRectangle_.west) / _this3.tileWidth;
+          return _this3.rasterizeFeatures(features, _this3.styleFunction_, resolution);
+        });
+        this.tileCache.set(cacheKey, promise);
+
+        if (this.tileCache.getCount() > 2 * this.tileCache.highWaterMark) {
+          while (this.tileCache.canExpireCache()) {
+            this.tileCache.pop();
+          }
+        }
+      }
+
+      return promise;
+    } catch (e) {
+      console.trace(e);
+      this.raiseEvent('could not render pbf to tile', e);
+    }
+  };
+
+  _proto.rasterizeFeatures = function rasterizeFeatures(features, styleFunction, resolution) {
+    var canvas = document.createElement('canvas');
+    var vectorContext = (0,ol_render_js__WEBPACK_IMPORTED_MODULE_3__.toContext)(canvas.getContext('2d'), {
+      size: [this.tileWidth, this.tileHeight]
+    });
+    features.forEach(function (f) {
+      var styles = styleFunction(f, resolution);
+
+      if (styles) {
+        styles.forEach(function (style) {
+          vectorContext.setStyle(style);
+          vectorContext.drawGeometry(f);
+        });
+      }
+    });
+    return canvas;
+  };
+
+  return MVTImageryProvider;
+}();
+
+
 
 /***/ }),
 
@@ -2656,11 +2689,12 @@ function () {
 /*!******************************!*\
   !*** ./src/olcs/OLCesium.js ***!
   \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_geom_Point_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/geom/Point.js */ "ol/geom/Point.js");
 /* harmony import */ var ol_geom_Point_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_geom_Point_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ol_proj_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ol/proj.js */ "ol/proj.js");
@@ -2672,6 +2706,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _RasterSynchronizer_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./RasterSynchronizer.js */ "./src/olcs/RasterSynchronizer.js");
 /* harmony import */ var _VectorSynchronizer_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./VectorSynchronizer.js */ "./src/olcs/VectorSynchronizer.js");
 /* harmony import */ var _OverlaySynchronizer_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./OverlaySynchronizer.js */ "./src/olcs/OverlaySynchronizer.js");
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 /**
  * @module olcs.OLCesium
  */
@@ -2699,9 +2737,7 @@ __webpack_require__.r(__webpack_exports__);
  *      `Cesium.Scene`.
  */
 
-var OLCesium =
-/*#__PURE__*/
-function () {
+var OLCesium = /*#__PURE__*/function () {
   /**
    * @param {!OLCesiumOptions} options Options.
    * @constructor
@@ -2733,7 +2769,7 @@ function () {
      */
 
 
-    this.to4326Transform_ = Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_1__["getTransform"])(this.map_.getView().getProjection(), 'EPSG:4326');
+    this.to4326Transform_ = (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_1__.getTransform)(this.map_.getView().getProjection(), 'EPSG:4326');
     /**
      * @type {number}
      * @private
@@ -2769,29 +2805,22 @@ function () {
     var containerAttribute = document.createAttribute('style');
     containerAttribute.value = fillArea + "visibility:hidden;";
     this.container_.setAttributeNode(containerAttribute);
-    var targetElement = options.target || null;
+    var targetElement = options.target || this.map_.getViewport();
 
-    if (targetElement) {
-      if (typeof targetElement === 'string') {
-        targetElement = document.getElementById(targetElement);
-      }
-
-      targetElement.appendChild(this.container_);
-    } else {
-      var oc = this.map_.getViewport().querySelector('.ol-overlaycontainer');
-
-      if (oc && oc.parentNode) {
-        oc.parentNode.insertBefore(this.container_, oc);
-      }
+    if (typeof targetElement === 'string') {
+      targetElement = document.getElementById(targetElement);
     }
+
+    targetElement.appendChild(this.container_);
     /**
      * Whether the Cesium container is placed over the ol map.
+     * a target => side by side mode
+     * no target => over map mode
      * @type {boolean}
      * @private
      */
 
-
-    this.isOverMap_ = !targetElement;
+    this.isOverMap_ = !options.target;
 
     if (this.isOverMap_ && options.stopOpenLayersEventsPropagation) {
       var overlayEvents = ['click', 'dblclick', 'mousedown', 'touchstart', 'MSPointerDown', 'pointerdown', 'mousewheel', 'wheel'];
@@ -2815,9 +2844,9 @@ function () {
     canvasAttribute.value = fillArea;
     this.canvas_.setAttributeNode(canvasAttribute);
 
-    if (_util_js__WEBPACK_IMPORTED_MODULE_2__["default"].supportsImageRenderingPixelated()) {
+    if (_util_js__WEBPACK_IMPORTED_MODULE_2__.default.supportsImageRenderingPixelated()) {
       // non standard CSS4
-      this.canvas_.style['imageRendering'] = _util_js__WEBPACK_IMPORTED_MODULE_2__["default"].imageRenderingValue();
+      this.canvas_.style['imageRendering'] = _util_js__WEBPACK_IMPORTED_MODULE_2__.default.imageRenderingValue();
     }
 
     this.canvas_.oncontextmenu = function () {
@@ -2874,7 +2903,7 @@ function () {
      * @private
      */
 
-    this.camera_ = new _Camera_js__WEBPACK_IMPORTED_MODULE_5__["default"](this.scene_, this.map_);
+    this.camera_ = new _Camera_js__WEBPACK_IMPORTED_MODULE_5__.default(this.scene_, this.map_);
     /**
      * @type {!Cesium.Globe}
      * @private
@@ -2897,7 +2926,7 @@ function () {
       scene: this.scene_,
       dataSourceCollection: this.dataSourceCollection_
     });
-    var synchronizers = options.createSynchronizers ? options.createSynchronizers(this.map_, this.scene_, this.dataSourceCollection_) : [new _RasterSynchronizer_js__WEBPACK_IMPORTED_MODULE_6__["default"](this.map_, this.scene_), new _VectorSynchronizer_js__WEBPACK_IMPORTED_MODULE_7__["default"](this.map_, this.scene_), new _OverlaySynchronizer_js__WEBPACK_IMPORTED_MODULE_8__["default"](this.map_, this.scene_)]; // Assures correct canvas size after initialisation
+    var synchronizers = options.createSynchronizers ? options.createSynchronizers(this.map_, this.scene_, this.dataSourceCollection_) : [new _RasterSynchronizer_js__WEBPACK_IMPORTED_MODULE_6__.default(this.map_, this.scene_), new _VectorSynchronizer_js__WEBPACK_IMPORTED_MODULE_7__.default(this.map_, this.scene_), new _OverlaySynchronizer_js__WEBPACK_IMPORTED_MODULE_8__.default(this.map_, this.scene_)]; // Assures correct canvas size after initialisation
 
     this.handleResize_();
 
@@ -3090,7 +3119,7 @@ function () {
 
     var resolutionScale = this.resolutionScale_;
 
-    if (!_util_js__WEBPACK_IMPORTED_MODULE_2__["default"].supportsImageRenderingPixelated()) {
+    if (!_util_js__WEBPACK_IMPORTED_MODULE_2__.default.supportsImageRenderingPixelated()) {
       resolutionScale *= window.devicePixelRatio || 1.0;
     }
 
@@ -3217,7 +3246,6 @@ function () {
         }
 
         this.map_.getOverlayContainer().classList.add('olcs-hideoverlay');
-        this.map_.getOverlayContainerStopEvent().classList.add('olcs-hideoverlay');
       }
 
       this.camera_.readFromView();
@@ -3239,7 +3267,6 @@ function () {
         };
 
         this.map_.getOverlayContainer().classList.remove('olcs-hideoverlay');
-        this.map_.getOverlayContainerStopEvent().classList.remove('olcs-hideoverlay');
 
         if (this.hiddenRootGroup_) {
           this.hiddenRootGroup_.setVisible(true);
@@ -3306,7 +3333,7 @@ function () {
 
   _proto.enableAutoRenderLoop = function enableAutoRenderLoop() {
     if (!this.autoRenderLoop_) {
-      this.autoRenderLoop_ = new _AutoRenderLoop_js__WEBPACK_IMPORTED_MODULE_4__["default"](this);
+      this.autoRenderLoop_ = new _AutoRenderLoop_js__WEBPACK_IMPORTED_MODULE_4__.default(this);
     }
   }
   /**
@@ -3379,21 +3406,22 @@ function () {
     if (!view.isDef() || isNaN(center[0]) || isNaN(center[1])) {
       throw new Error("The OpenLayers map is not properly initialized: " + center + " / " + view.getResolution());
     }
-  };
+  }
+  /**
+   * @type {ol.Feature}
+   */
+  ;
 
-  return OLCesium;
-}();
-
-Object.defineProperties(OLCesium.prototype, {
-  'trackedFeature': {
-    'get':
-    /** @this {olcs.OLCesium} */
-    function get() {
+  _createClass(OLCesium, [{
+    key: "trackedFeature",
+    get: function get() {
       return this.trackedFeature_;
-    },
-    'set':
-    /** @this {olcs.OLCesium} */
-    function set(feature) {
+    }
+    /**
+     * @param {ol.Feature} feature
+     */
+    ,
+    set: function set(feature) {
       if (this.trackedFeature_ !== feature) {
         var scene = this.scene_; //Stop tracking
 
@@ -3420,10 +3448,10 @@ Object.defineProperties(OLCesium.prototype, {
 
         var toCesiumPosition = function toCesiumPosition() {
           var geometry = feature.getGeometry();
-          console.assert(geometry instanceof ol_geom_Point_js__WEBPACK_IMPORTED_MODULE_0___default.a);
+          console.assert(geometry instanceof (ol_geom_Point_js__WEBPACK_IMPORTED_MODULE_0___default()));
           var coo = geometry.getCoordinates();
           var coo4326 = to4326Transform(coo, undefined, coo.length);
-          return _core_js__WEBPACK_IMPORTED_MODULE_3__["default"].ol4326CoordinateToCesiumCartesian(coo4326);
+          return _core_js__WEBPACK_IMPORTED_MODULE_3__.default.ol4326CoordinateToCesiumCartesian(coo4326);
         }; // Create an invisible point entity for tracking.
         // It is independant from the primitive/geometry created by the vector synchronizer.
 
@@ -3440,9 +3468,12 @@ Object.defineProperties(OLCesium.prototype, {
         this.trackedEntity_ = this.dataSourceDisplay_.defaultDataSource.entities.add(options);
       }
     }
-  }
-});
-/* harmony default export */ __webpack_exports__["default"] = (OLCesium);
+  }]);
+
+  return OLCesium;
+}();
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OLCesium);
 
 /***/ }),
 
@@ -3450,11 +3481,12 @@ Object.defineProperties(OLCesium.prototype, {
 /*!*****************************************!*\
   !*** ./src/olcs/OverlaySynchronizer.js ***!
   \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _SynchronizedOverlay_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SynchronizedOverlay.js */ "./src/olcs/SynchronizedOverlay.js");
 /* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./util.js */ "./src/olcs/util.js");
 /**
@@ -3463,9 +3495,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var OverlaySynchronizer =
-/*#__PURE__*/
-function () {
+var OverlaySynchronizer = /*#__PURE__*/function () {
   /**
   * @param {!ol.Map} map
   * @param {!Cesium.Scene} scene
@@ -3592,12 +3622,12 @@ function () {
       return;
     }
 
-    var cesiumOverlay = new _SynchronizedOverlay_js__WEBPACK_IMPORTED_MODULE_0__["default"]({
+    var cesiumOverlay = new _SynchronizedOverlay_js__WEBPACK_IMPORTED_MODULE_0__.default({
       scene: this.scene,
       synchronizer: this,
       parent: overlay
     });
-    var overlayId = Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["getUid"])(overlay).toString();
+    var overlayId = (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.getUid)(overlay).toString();
     this.overlayMap_[overlayId] = cesiumOverlay;
   }
   /**
@@ -3620,7 +3650,7 @@ function () {
   ;
 
   _proto.removeOverlay = function removeOverlay(overlay) {
-    var overlayId = Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["getUid"])(overlay).toString();
+    var overlayId = (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.getUid)(overlay).toString();
     var csOverlay = this.overlayMap_[overlayId];
 
     if (csOverlay) {
@@ -3647,7 +3677,7 @@ function () {
   return OverlaySynchronizer;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (OverlaySynchronizer);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OverlaySynchronizer);
 
 /***/ }),
 
@@ -3655,17 +3685,20 @@ function () {
 /*!****************************************!*\
   !*** ./src/olcs/RasterSynchronizer.js ***!
   \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/layer/Group.js */ "ol/layer/Group.js");
 /* harmony import */ var ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./util.js */ "./src/olcs/util.js");
 /* harmony import */ var _AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AbstractSynchronizer.js */ "./src/olcs/AbstractSynchronizer.js");
 /* harmony import */ var _core_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./core.js */ "./src/olcs/core.js");
-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 /**
  * @module olcs.RasterSynchronizer
@@ -3675,9 +3708,7 @@ function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.crea
 
 
 
-var RasterSynchronizer =
-/*#__PURE__*/
-function (_olcsAbstractSynchron) {
+var RasterSynchronizer = /*#__PURE__*/function (_olcsAbstractSynchron) {
   _inheritsLoose(RasterSynchronizer, _olcsAbstractSynchron);
 
   /**
@@ -3761,7 +3792,7 @@ function (_olcsAbstractSynchron) {
   ;
 
   _proto.convertLayerToCesiumImageries = function convertLayerToCesiumImageries(olLayer, viewProj) {
-    var result = _core_js__WEBPACK_IMPORTED_MODULE_3__["default"].tileLayerToImageryLayer(this.map, olLayer, viewProj);
+    var result = _core_js__WEBPACK_IMPORTED_MODULE_3__.default.tileLayerToImageryLayer(this.map, olLayer, viewProj);
     return result ? [result] : null;
   }
   /**
@@ -3773,7 +3804,7 @@ function (_olcsAbstractSynchron) {
     var _this2 = this;
 
     var olLayer = olLayerWithParents.layer;
-    var uid = Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["getUid"])(olLayer).toString();
+    var uid = (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.getUid)(olLayer).toString();
     var viewProj = this.view.getProjection();
     console.assert(viewProj);
     var cesiumObjects = this.convertLayerToCesiumImageries(olLayer, viewProj);
@@ -3788,13 +3819,39 @@ function (_olcsAbstractSynchron) {
           console.assert(cesiumObjects);
 
           for (var i = 0; i < cesiumObjects.length; ++i) {
-            _core_js__WEBPACK_IMPORTED_MODULE_3__["default"].updateCesiumLayerProperties(olLayerWithParents, cesiumObjects[i]);
+            _core_js__WEBPACK_IMPORTED_MODULE_3__.default.updateCesiumLayerProperties(olLayerWithParents, cesiumObjects[i]);
           }
         }));
       });
 
+      if (olLayer.getStyleFunction) {
+        var previousStyleFunction = olLayer.getStyleFunction(); // there is no convenient way to detect a style function change in OL
+
+        listenKeyArray.push(olLayer.on('change', function () {
+          var currentStyleFunction = olLayer.getStyleFunction();
+
+          if (previousStyleFunction === currentStyleFunction) {
+            return;
+          }
+
+          previousStyleFunction = currentStyleFunction;
+
+          for (var i = 0; i < cesiumObjects.length; ++i) {
+            var csObj = cesiumObjects[i]; // clear cache and set new style
+
+            if (csObj._imageryCache && csObj.imageryProvider.cache_) {
+              csObj._imageryCache = {};
+              csObj.imageryProvider.cache_ = {};
+              csObj.imageryProvider.styleFunction_ = currentStyleFunction;
+            }
+          }
+
+          _this2.scene.requestRender();
+        }));
+      }
+
       for (var i = 0; i < cesiumObjects.length; ++i) {
-        _core_js__WEBPACK_IMPORTED_MODULE_3__["default"].updateCesiumLayerProperties(olLayerWithParents, cesiumObjects[i]);
+        _core_js__WEBPACK_IMPORTED_MODULE_3__.default.updateCesiumLayerProperties(olLayerWithParents, cesiumObjects[i]);
       } // there is no way to modify Cesium layer extent,
       // we have to recreate when OpenLayers layer extent changes:
 
@@ -3807,7 +3864,7 @@ function (_olcsAbstractSynchron) {
           _this2.ourLayers_.remove(cesiumObjects[_i], false);
         }
 
-        delete _this2.layerMap[Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["getUid"])(olLayer)]; // invalidate the map entry
+        delete _this2.layerMap[(0,_util_js__WEBPACK_IMPORTED_MODULE_1__.getUid)(olLayer)]; // invalidate the map entry
 
         _this2.synchronize();
       }));
@@ -3847,9 +3904,9 @@ function (_olcsAbstractSynchron) {
     while (queue.length > 0) {
       var olLayer = queue.splice(0, 1)[0];
       layers.push(olLayer);
-      zIndices[Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["getUid"])(olLayer)] = olLayer.getZIndex();
+      zIndices[(0,_util_js__WEBPACK_IMPORTED_MODULE_1__.getUid)(olLayer)] = olLayer.getZIndex() || 0;
 
-      if (olLayer instanceof ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_0___default.a) {
+      if (olLayer instanceof (ol_layer_Group_js__WEBPACK_IMPORTED_MODULE_0___default())) {
         var sublayers = olLayer.getLayers();
 
         if (sublayers) {
@@ -3859,11 +3916,11 @@ function (_olcsAbstractSynchron) {
       }
     }
 
-    Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["stableSort"])(layers, function (layer1, layer2) {
-      return zIndices[Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["getUid"])(layer1)] - zIndices[Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["getUid"])(layer2)];
+    (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.stableSort)(layers, function (layer1, layer2) {
+      return zIndices[(0,_util_js__WEBPACK_IMPORTED_MODULE_1__.getUid)(layer1)] - zIndices[(0,_util_js__WEBPACK_IMPORTED_MODULE_1__.getUid)(layer2)];
     });
     layers.forEach(function (olLayer) {
-      var olLayerId = Object(_util_js__WEBPACK_IMPORTED_MODULE_1__["getUid"])(olLayer).toString();
+      var olLayerId = (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.getUid)(olLayer).toString();
       var cesiumObjects = _this3.layerMap[olLayerId];
 
       if (cesiumObjects) {
@@ -3883,9 +3940,9 @@ function (_olcsAbstractSynchron) {
   };
 
   return RasterSynchronizer;
-}(_AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_2__["default"]);
+}(_AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_2__.default);
 
-/* harmony default export */ __webpack_exports__["default"] = (RasterSynchronizer);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RasterSynchronizer);
 
 /***/ }),
 
@@ -3893,11 +3950,12 @@ function (_olcsAbstractSynchron) {
 /*!*****************************************!*\
   !*** ./src/olcs/SynchronizedOverlay.js ***!
   \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_Overlay_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/Overlay.js */ "ol/Overlay.js");
 /* harmony import */ var ol_Overlay_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_Overlay_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ol_proj_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ol/proj.js */ "ol/proj.js");
@@ -3905,9 +3963,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util.js */ "./src/olcs/util.js");
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ol/Observable.js */ "ol/Observable.js");
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(ol_Observable_js__WEBPACK_IMPORTED_MODULE_3__);
+function _createForOfIteratorHelperLoose(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (it) return (it = it.call(o)).next.bind(it); if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; return function () { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 /**
  * @module olcs.SynchronizedOverlay
@@ -3924,9 +3990,7 @@ function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.crea
  * @property {!import('olsc/OverlaySynchronizer.js').default} synchronizer
  */
 
-var SynchronizedOverlay =
-/*#__PURE__*/
-function (_olOverlay) {
+var SynchronizedOverlay = /*#__PURE__*/function (_olOverlay) {
   _inheritsLoose(SynchronizedOverlay, _olOverlay);
 
   /**
@@ -4079,7 +4143,7 @@ function (_olOverlay) {
   _proto.handleMapChanged = function handleMapChanged() {
     if (this.scenePostRenderListenerRemover_) {
       this.scenePostRenderListenerRemover_();
-      Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["removeNode"])(this.element);
+      (0,_util_js__WEBPACK_IMPORTED_MODULE_2__.removeNode)(this.element);
     }
 
     this.scenePostRenderListenerRemover_ = null;
@@ -4108,7 +4172,7 @@ function (_olOverlay) {
 
     if (position) {
       var sourceProjection = this.parent_.getMap().getView().getProjection();
-      this.positionWGS84_ = Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_1__["transform"])(position, sourceProjection, 'EPSG:4326');
+      this.positionWGS84_ = (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_1__.transform)(position, sourceProjection, 'EPSG:4326');
     } else {
       this.positionWGS84_ = undefined;
     }
@@ -4123,6 +4187,11 @@ function (_olOverlay) {
   _proto.handleElementChanged = function handleElementChanged() {
     function cloneNode(node, parent) {
       var clone = node.cloneNode();
+
+      if (node.nodeName === 'CANVAS') {
+        var ctx = clone.getContext('2d');
+        ctx.drawImage(node, 0, 0);
+      }
 
       if (parent) {
         parent.appendChild(clone);
@@ -4148,24 +4217,13 @@ function (_olOverlay) {
       return clone;
     }
 
-    Object(_util_js__WEBPACK_IMPORTED_MODULE_2__["removeChildren"])(this.element);
+    (0,_util_js__WEBPACK_IMPORTED_MODULE_2__.removeChildren)(this.element);
     var element = this.getElement();
 
     if (element) {
       if (element.parentNode && element.parentNode.childNodes) {
-        for (var _iterator = element.parentNode.childNodes, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-          var _ref;
-
-          if (_isArray) {
-            if (_i >= _iterator.length) break;
-            _ref = _iterator[_i++];
-          } else {
-            _i = _iterator.next();
-            if (_i.done) break;
-            _ref = _i.value;
-          }
-
-          var node = _ref;
+        for (var _iterator = _createForOfIteratorHelperLoose(element.parentNode.childNodes), _step; !(_step = _iterator()).done;) {
+          var node = _step.value;
           var clonedNode = cloneNode(node, null);
           this.element.appendChild(clonedNode);
         }
@@ -4244,7 +4302,7 @@ function (_olOverlay) {
       this.observer_.disconnect();
     }
 
-    Object(ol_Observable_js__WEBPACK_IMPORTED_MODULE_3__["unByKey"])(this.listenerKeys_);
+    (0,ol_Observable_js__WEBPACK_IMPORTED_MODULE_3__.unByKey)(this.listenerKeys_);
     this.listenerKeys_.splice(0);
 
     if (this.element.removeNode) {
@@ -4257,9 +4315,9 @@ function (_olOverlay) {
   };
 
   return SynchronizedOverlay;
-}(ol_Overlay_js__WEBPACK_IMPORTED_MODULE_0___default.a);
+}((ol_Overlay_js__WEBPACK_IMPORTED_MODULE_0___default()));
 
-/* harmony default export */ __webpack_exports__["default"] = (SynchronizedOverlay);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SynchronizedOverlay);
 
 /***/ }),
 
@@ -4267,11 +4325,12 @@ function (_olOverlay) {
 /*!****************************************!*\
   !*** ./src/olcs/VectorSynchronizer.js ***!
   \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/source/Vector.js */ "ol/source/Vector.js");
 /* harmony import */ var ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ol_layer_Layer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ol/layer/Layer.js */ "ol/layer/Layer.js");
@@ -4287,7 +4346,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ol_layer_VectorTile_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ol_layer_VectorTile_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./AbstractSynchronizer.js */ "./src/olcs/AbstractSynchronizer.js");
 /* harmony import */ var _FeatureConverter_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./FeatureConverter.js */ "./src/olcs/FeatureConverter.js");
-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 /**
  * @module olcs.VectorSynchronizer
@@ -4302,9 +4363,7 @@ function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.crea
 
 
 
-var VectorSynchronizer =
-/*#__PURE__*/
-function (_olcsAbstractSynchron) {
+var VectorSynchronizer = /*#__PURE__*/function (_olcsAbstractSynchron) {
   _inheritsLoose(VectorSynchronizer, _olcsAbstractSynchron);
 
   /**
@@ -4323,7 +4382,7 @@ function (_olcsAbstractSynchron) {
      * @protected
      */
 
-    _this.converter = opt_converter || new _FeatureConverter_js__WEBPACK_IMPORTED_MODULE_8__["default"](scene);
+    _this.converter = opt_converter || new _FeatureConverter_js__WEBPACK_IMPORTED_MODULE_8__.default(scene);
     /**
      * @private
      */
@@ -4412,14 +4471,14 @@ function (_olcsAbstractSynchron) {
 
     var olLayer = olLayerWithParents.layer;
 
-    if (!(olLayer instanceof ol_layer_Vector_js__WEBPACK_IMPORTED_MODULE_5___default.a) || olLayer instanceof ol_layer_VectorTile_js__WEBPACK_IMPORTED_MODULE_6___default.a) {
+    if (!(olLayer instanceof (ol_layer_Vector_js__WEBPACK_IMPORTED_MODULE_5___default())) || olLayer instanceof (ol_layer_VectorTile_js__WEBPACK_IMPORTED_MODULE_6___default())) {
       return null;
     }
 
-    console.assert(olLayer instanceof ol_layer_Layer_js__WEBPACK_IMPORTED_MODULE_1___default.a);
+    console.assert(olLayer instanceof (ol_layer_Layer_js__WEBPACK_IMPORTED_MODULE_1___default()));
     var source = olLayer.getSource();
 
-    if (source instanceof ol_source_Cluster_js__WEBPACK_IMPORTED_MODULE_2___default.a) {
+    if (source instanceof (ol_source_Cluster_js__WEBPACK_IMPORTED_MODULE_2___default())) {
       source = source.getSource();
     }
 
@@ -4427,7 +4486,7 @@ function (_olcsAbstractSynchron) {
       return null;
     }
 
-    console.assert(source instanceof ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_0___default.a);
+    console.assert(source instanceof (ol_source_Vector_js__WEBPACK_IMPORTED_MODULE_0___default()));
     console.assert(this.view);
     var view = this.view;
     var featurePrimitiveMap = {};
@@ -4435,25 +4494,25 @@ function (_olcsAbstractSynchron) {
     var csPrimitives = counterpart.getRootPrimitive();
     var olListenKeys = counterpart.olListenKeys;
     [olLayerWithParents.layer].concat(olLayerWithParents.parents).forEach(function (olLayerItem) {
-      olListenKeys.push(Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["olcsListen"])(olLayerItem, 'change:visible', function () {
+      olListenKeys.push((0,_util_js__WEBPACK_IMPORTED_MODULE_4__.olcsListen)(olLayerItem, 'change:visible', function () {
         _this2.updateLayerVisibility(olLayerWithParents, csPrimitives);
       }));
     });
     this.updateLayerVisibility(olLayerWithParents, csPrimitives);
 
     var onAddFeature = function (feature) {
-      console.assert(olLayer instanceof ol_layer_Vector_js__WEBPACK_IMPORTED_MODULE_5___default.a || olLayer instanceof ol_layer_Image_js__WEBPACK_IMPORTED_MODULE_3___default.a);
+      console.assert(olLayer instanceof (ol_layer_Vector_js__WEBPACK_IMPORTED_MODULE_5___default()) || olLayer instanceof (ol_layer_Image_js__WEBPACK_IMPORTED_MODULE_3___default()));
       var context = counterpart.context;
       var prim = this.converter.convert(olLayer, view, feature, context);
 
       if (prim) {
-        featurePrimitiveMap[Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["getUid"])(feature)] = prim;
+        featurePrimitiveMap[(0,_util_js__WEBPACK_IMPORTED_MODULE_4__.getUid)(feature)] = prim;
         csPrimitives.add(prim);
       }
     }.bind(this);
 
     var onRemoveFeature = function (feature) {
-      var id = Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["getUid"])(feature);
+      var id = (0,_util_js__WEBPACK_IMPORTED_MODULE_4__.getUid)(feature);
       var context = counterpart.context;
       var bbs = context.featureToCesiumMap[id];
 
@@ -4474,15 +4533,15 @@ function (_olcsAbstractSynchron) {
       }
     }.bind(this);
 
-    olListenKeys.push(Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["olcsListen"])(source, 'addfeature', function (e) {
+    olListenKeys.push((0,_util_js__WEBPACK_IMPORTED_MODULE_4__.olcsListen)(source, 'addfeature', function (e) {
       console.assert(e.feature);
       onAddFeature(e.feature);
     }, this));
-    olListenKeys.push(Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["olcsListen"])(source, 'removefeature', function (e) {
+    olListenKeys.push((0,_util_js__WEBPACK_IMPORTED_MODULE_4__.olcsListen)(source, 'removefeature', function (e) {
       console.assert(e.feature);
       onRemoveFeature(e.feature);
     }, this));
-    olListenKeys.push(Object(_util_js__WEBPACK_IMPORTED_MODULE_4__["olcsListen"])(source, 'changefeature', function (e) {
+    olListenKeys.push((0,_util_js__WEBPACK_IMPORTED_MODULE_4__.olcsListen)(source, 'changefeature', function (e) {
       var feature = e.feature;
       console.assert(feature);
       onRemoveFeature(feature);
@@ -4492,9 +4551,9 @@ function (_olcsAbstractSynchron) {
   };
 
   return VectorSynchronizer;
-}(_AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_7__["default"]);
+}(_AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_7__.default);
 
-/* harmony default export */ __webpack_exports__["default"] = (VectorSynchronizer);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (VectorSynchronizer);
 
 /***/ }),
 
@@ -4502,23 +4561,21 @@ function (_olcsAbstractSynchron) {
 /*!****************************************!*\
   !*** ./src/olcs/contrib/LazyLoader.js ***!
   \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ LazyLoader)
+/* harmony export */ });
 /**
  * @module olcs.contrib.LazyLoader
  */
-var exports =
-/*#__PURE__*/
-function () {
+var LazyLoader = /*#__PURE__*/function () {
   /**
    * @param {string} url
-   * @struct
    * @api
    */
-  function exports(url) {
+  function LazyLoader(url) {
     /**
      * @type {Promise<undefined>}
      * @protected
@@ -4537,7 +4594,7 @@ function () {
    */
 
 
-  var _proto = exports.prototype;
+  var _proto = LazyLoader.prototype;
 
   _proto.load = function load() {
     var _this = this;
@@ -4563,10 +4620,10 @@ function () {
     return this.promise;
   };
 
-  return exports;
+  return LazyLoader;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (exports);
+
 
 /***/ }),
 
@@ -4574,24 +4631,25 @@ function () {
 /*!*************************************!*\
   !*** ./src/olcs/contrib/Manager.js ***!
   \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _contrib_LazyLoader_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../contrib/LazyLoader.js */ "./src/olcs/contrib/LazyLoader.js");
 /* harmony import */ var _OLCesium_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../OLCesium.js */ "./src/olcs/OLCesium.js");
 /* harmony import */ var _core_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core.js */ "./src/olcs/core.js");
 /* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../math.js */ "./src/olcs/math.js");
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ol/Observable.js */ "ol/Observable.js");
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(ol_Observable_js__WEBPACK_IMPORTED_MODULE_4__);
-function isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function _construct(Parent, args, Class) { if (_isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
 
-function _construct(Parent, args, Class) { if (isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
 
 /**
  * @module olcs.contrib.Manager
@@ -4605,11 +4663,10 @@ function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.crea
  * @typedef {Object} ManagerOptions
  * @property {import('ol/Map.js').default} map
  * @property {import('ol/extent.js').Extent} [cameraExtentInRadians]
+ * @property {string} [cesiumIonDefaultAccessToken]
  */
 
-var Manager =
-/*#__PURE__*/
-function (_olObservable) {
+var Manager = /*#__PURE__*/function (_olObservable) {
   _inheritsLoose(Manager, _olObservable);
 
   /**
@@ -4622,7 +4679,8 @@ function (_olObservable) {
 
     var _ref = _temp === void 0 ? {} : _temp,
         map = _ref.map,
-        cameraExtentInRadians = _ref.cameraExtentInRadians;
+        cameraExtentInRadians = _ref.cameraExtentInRadians,
+        cesiumIonDefaultAccessToken = _ref.cesiumIonDefaultAccessToken;
 
     _this = _olObservable.call(this) || this;
     /**
@@ -4662,6 +4720,12 @@ function (_olObservable) {
 
     _this.promise_;
     /**
+     * @type {string}
+     * @private
+     */
+
+    _this.cesiumIonDefaultAccessToken_ = cesiumIonDefaultAccessToken;
+    /**
      * @type {olcs.OLCesium}
      * @protected
      */
@@ -4672,7 +4736,7 @@ function (_olObservable) {
      * @private
      */
 
-    _this.cesiumInitialTilt_ = Object(_math_js__WEBPACK_IMPORTED_MODULE_3__["toRadians"])(50);
+    _this.cesiumInitialTilt_ = (0,_math_js__WEBPACK_IMPORTED_MODULE_3__.toRadians)(50);
     /**
      * @protected
      * @type {number}
@@ -4722,7 +4786,7 @@ function (_olObservable) {
     var _this2 = this;
 
     if (!this.promise_) {
-      var cesiumLazyLoader = new _contrib_LazyLoader_js__WEBPACK_IMPORTED_MODULE_0__["default"](this.cesiumUrl_);
+      var cesiumLazyLoader = new _contrib_LazyLoader_js__WEBPACK_IMPORTED_MODULE_0__.default(this.cesiumUrl_);
       this.promise_ = cesiumLazyLoader.load().then(function () {
         return _this2.onCesiumLoaded();
       });
@@ -4745,6 +4809,10 @@ function (_olObservable) {
       this.boundingSphere_ = Cesium.BoundingSphere.fromRectangle3D(rect, Cesium.Ellipsoid.WGS84, 300); // lux mean height is 300m
     }
 
+    if (this.cesiumIonDefaultAccessToken_) {
+      Cesium.Ion.defaultAccessToken = this.cesiumIonDefaultAccessToken_;
+    }
+
     this.ol3d = this.instantiateOLCesium();
     var scene = this.ol3d.getCesiumScene();
     this.configureForUsability(scene);
@@ -4760,7 +4828,7 @@ function (_olObservable) {
 
   _proto.instantiateOLCesium = function instantiateOLCesium() {
     console.assert(this.map);
-    var ol3d = new _OLCesium_js__WEBPACK_IMPORTED_MODULE_1__["default"]({
+    var ol3d = new _OLCesium_js__WEBPACK_IMPORTED_MODULE_1__.default({
       map: this.map
     });
     var scene = ol3d.getCesiumScene();
@@ -4861,7 +4929,7 @@ function (_olObservable) {
       if (is3DCurrentlyEnabled) {
         // Disable 3D
         console.assert(_this4.map);
-        return _core_js__WEBPACK_IMPORTED_MODULE_2__["default"].resetToNorthZenith(_this4.map, scene).then(function () {
+        return _core_js__WEBPACK_IMPORTED_MODULE_2__.default.resetToNorthZenith(_this4.map, scene).then(function () {
           ol3d.setEnabled(false);
 
           _this4.dispatchEvent('toggle');
@@ -4872,7 +4940,7 @@ function (_olObservable) {
 
         _this4.dispatchEvent('toggle');
 
-        return _core_js__WEBPACK_IMPORTED_MODULE_2__["default"].rotateAroundBottomCenter(scene, _this4.cesiumInitialTilt_);
+        return _core_js__WEBPACK_IMPORTED_MODULE_2__.default.rotateAroundBottomCenter(scene, _this4.cesiumInitialTilt_);
       }
     });
   }
@@ -4944,7 +5012,7 @@ function (_olObservable) {
 
   _proto.getTiltOnGlobe = function getTiltOnGlobe() {
     var scene = this.ol3d.getCesiumScene();
-    var tiltOnGlobe = _core_js__WEBPACK_IMPORTED_MODULE_2__["default"].computeSignedTiltAngleOnGlobe(scene);
+    var tiltOnGlobe = _core_js__WEBPACK_IMPORTED_MODULE_2__.default.computeSignedTiltAngleOnGlobe(scene);
     return -tiltOnGlobe;
   }
   /**
@@ -4954,10 +5022,10 @@ function (_olObservable) {
 
   _proto.setHeading = function setHeading(angle) {
     var scene = this.ol3d.getCesiumScene();
-    var bottom = _core_js__WEBPACK_IMPORTED_MODULE_2__["default"].pickBottomPoint(scene);
+    var bottom = _core_js__WEBPACK_IMPORTED_MODULE_2__.default.pickBottomPoint(scene);
 
     if (bottom) {
-      _core_js__WEBPACK_IMPORTED_MODULE_2__["default"].setHeadingUsingBottomCenter(scene, angle, bottom);
+      _core_js__WEBPACK_IMPORTED_MODULE_2__.default.setHeadingUsingBottomCenter(scene, angle, bottom);
     }
   }
   /**
@@ -5049,9 +5117,9 @@ function (_olObservable) {
   };
 
   return Manager;
-}(ol_Observable_js__WEBPACK_IMPORTED_MODULE_4___default.a);
+}((ol_Observable_js__WEBPACK_IMPORTED_MODULE_4___default()));
 
-/* harmony default export */ __webpack_exports__["default"] = (Manager);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Manager);
 
 /***/ }),
 
@@ -5059,11 +5127,15 @@ function (_olObservable) {
 /*!**************************!*\
   !*** ./src/olcs/core.js ***!
   \**************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "attributionsFunctionToCredits": () => (/* binding */ attributionsFunctionToCredits),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "calcDistanceForResolution": () => (/* binding */ calcDistanceForResolution),
+/* harmony export */   "calcResolutionForDistance": () => (/* binding */ calcResolutionForDistance)
+/* harmony export */ });
 /* harmony import */ var ol_easing_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/easing.js */ "ol/easing.js");
 /* harmony import */ var ol_easing_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_easing_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ol_layer_Tile_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ol/layer/Tile.js */ "ol/layer/Tile.js");
@@ -5072,21 +5144,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ol_layer_Image_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ol_layer_Image_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var ol_proj_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ol/proj.js */ "ol/proj.js");
 /* harmony import */ var ol_proj_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(ol_proj_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var ol_source_ImageStatic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ol/source/ImageStatic */ "ol/source/ImageStatic");
-/* harmony import */ var ol_source_ImageStatic__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(ol_source_ImageStatic__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var ol_source_ImageStatic_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ol/source/ImageStatic.js */ "ol/source/ImageStatic.js");
+/* harmony import */ var ol_source_ImageStatic_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(ol_source_ImageStatic_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var ol_source_ImageWMS_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ol/source/ImageWMS.js */ "ol/source/ImageWMS.js");
 /* harmony import */ var ol_source_ImageWMS_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(ol_source_ImageWMS_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var ol_source_TileImage_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ol/source/TileImage.js */ "ol/source/TileImage.js");
 /* harmony import */ var ol_source_TileImage_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ol_source_TileImage_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var ol_source_TileWMS_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ol/source/TileWMS.js */ "ol/source/TileWMS.js");
 /* harmony import */ var ol_source_TileWMS_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(ol_source_TileWMS_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var ol_source_Image_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ol/source/Image.js */ "ol/source/Image.js");
-/* harmony import */ var ol_source_Image_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(ol_source_Image_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _core_OLImageryProvider_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./core/OLImageryProvider.js */ "./src/olcs/core/OLImageryProvider.js");
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./util.js */ "./src/olcs/util.js");
+/* harmony import */ var ol_source_VectorTile_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ol/source/VectorTile.js */ "ol/source/VectorTile.js");
+/* harmony import */ var ol_source_VectorTile_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(ol_source_VectorTile_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var ol_source_Image_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ol/source/Image.js */ "ol/source/Image.js");
+/* harmony import */ var ol_source_Image_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(ol_source_Image_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _core_OLImageryProvider_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./core/OLImageryProvider.js */ "./src/olcs/core/OLImageryProvider.js");
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./util.js */ "./src/olcs/util.js");
+/* harmony import */ var _MVTImageryProvider_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./MVTImageryProvider.js */ "./src/olcs/MVTImageryProvider.js");
+/* harmony import */ var ol_layer_VectorTile_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ol/layer/VectorTile.js */ "ol/layer/VectorTile.js");
+/* harmony import */ var ol_layer_VectorTile_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(ol_layer_VectorTile_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var ol_extent__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ol/extent */ "ol/extent");
+/* harmony import */ var ol_extent__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(ol_extent__WEBPACK_IMPORTED_MODULE_14__);
 /**
  * @module olcs.core
  */
+
+
+
+
 
 
 
@@ -5133,8 +5216,7 @@ exports.computePixelSizeAtCoordinate = function (scene, target) {
   var canvas = scene.canvas;
   var frustum = camera.frustum;
   var distance = Cesium.Cartesian3.magnitude(Cesium.Cartesian3.subtract(camera.position, target, new Cesium.Cartesian3()));
-  var pixelSize = new Cesium.Cartesian2();
-  return frustum.getPixelDimensions(canvas.clientWidth, canvas.clientHeight, distance, pixelSize);
+  return frustum.getPixelDimensions(canvas.clientWidth, canvas.clientHeight, distance, scene.pixelRatio, new Cesium.Cartesian2());
 };
 /**
  * Compute bounding box around a target point.
@@ -5219,7 +5301,7 @@ exports.rotateAroundAxis = function (camera, angle, axis, transform, opt_options
   var options = opt_options || {};
   var duration = defaultValue(options.duration, 500); // ms
 
-  var easing = defaultValue(options.easing, ol_easing_js__WEBPACK_IMPORTED_MODULE_0__["linear"]);
+  var easing = defaultValue(options.easing, ol_easing_js__WEBPACK_IMPORTED_MODULE_0__.linear);
   var callback = options.callback;
   var lastProgress = 0;
   var oldTransform = new Cesium.Matrix4();
@@ -5437,39 +5519,38 @@ exports.computeAngleToZenith = function (scene, pivot) {
 
 exports.extentToRectangle = function (extent, projection) {
   if (extent && projection) {
-    var ext = Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_3__["transformExtent"])(extent, projection, 'EPSG:4326');
+    var ext = (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_3__.transformExtent)(extent, projection, 'EPSG:4326');
     return Cesium.Rectangle.fromDegrees(ext[0], ext[1], ext[2], ext[3]);
   } else {
     return null;
   }
 };
 /**
- * Creates Cesium.ImageryLayer best corresponding to the given ol.layer.Layer.
- * Only supports raster layers and static images
  * @param {!ol.Map} olMap
+ * @param {!ol.source.Source} source
+ * @param {!ol.View} viewProj
  * @param {!ol.layer.Base} olLayer
- * @param {!ol.proj.Projection} viewProj Projection of the view.
- * @return {?Cesium.ImageryLayer} null if not possible (or supported)
- * @api
+ * @return {!Cesium.ImageryProvider}
  */
 
 
-exports.tileLayerToImageryLayer = function (olMap, olLayer, viewProj) {
-  if (!(olLayer instanceof ol_layer_Tile_js__WEBPACK_IMPORTED_MODULE_1___default.a) && !(olLayer instanceof ol_layer_Image_js__WEBPACK_IMPORTED_MODULE_2___default.a)) {
+exports.sourceToImageryProvider = function (olMap, source, viewProj, olLayer) {
+  var skip = source.get('olcs_skip');
+
+  if (skip) {
     return null;
   }
 
-  var provider = null;
-  var source = olLayer.getSource(); // Convert ImageWMS to TileWMS
+  var provider = null; // Convert ImageWMS to TileWMS
 
-  if (source instanceof ol_source_ImageWMS_js__WEBPACK_IMPORTED_MODULE_5___default.a && source.getUrl() && source.getImageLoadFunction() === ol_source_Image_js__WEBPACK_IMPORTED_MODULE_8__["defaultImageLoadFunction"]) {
+  if (source instanceof (ol_source_ImageWMS_js__WEBPACK_IMPORTED_MODULE_5___default()) && source.getUrl() && source.getImageLoadFunction() === ol_source_Image_js__WEBPACK_IMPORTED_MODULE_9__.defaultImageLoadFunction) {
     var sourceProps = {
       'olcs.proxy': source.get('olcs.proxy'),
       'olcs.extent': source.get('olcs.extent'),
       'olcs.projection': source.get('olcs.projection'),
       'olcs.imagesource': source
     };
-    source = new ol_source_TileWMS_js__WEBPACK_IMPORTED_MODULE_7___default.a({
+    source = new (ol_source_TileWMS_js__WEBPACK_IMPORTED_MODULE_7___default())({
       url: source.getUrl(),
       attributions: source.getAttributions(),
       projection: source.getProjection(),
@@ -5478,8 +5559,8 @@ exports.tileLayerToImageryLayer = function (olMap, olLayer, viewProj) {
     source.setProperties(sourceProps);
   }
 
-  if (source instanceof ol_source_TileImage_js__WEBPACK_IMPORTED_MODULE_6___default.a) {
-    var projection = _util_js__WEBPACK_IMPORTED_MODULE_10__["default"].getSourceProjection(source);
+  if (source instanceof (ol_source_TileImage_js__WEBPACK_IMPORTED_MODULE_6___default())) {
+    var projection = _util_js__WEBPACK_IMPORTED_MODULE_11__.default.getSourceProjection(source);
 
     if (!projection) {
       // if not explicit, assume the same projection as view
@@ -5487,13 +5568,13 @@ exports.tileLayerToImageryLayer = function (olMap, olLayer, viewProj) {
     }
 
     if (exports.isCesiumProjection(projection)) {
-      provider = new _core_OLImageryProvider_js__WEBPACK_IMPORTED_MODULE_9__["default"](olMap, source, viewProj);
+      provider = new _core_OLImageryProvider_js__WEBPACK_IMPORTED_MODULE_10__.default(olMap, source, viewProj);
     } // Projection not supported by Cesium
     else {
         return null;
       }
-  } else if (source instanceof ol_source_ImageStatic__WEBPACK_IMPORTED_MODULE_4___default.a) {
-    var _projection = _util_js__WEBPACK_IMPORTED_MODULE_10__["default"].getSourceProjection(source);
+  } else if (source instanceof (ol_source_ImageStatic_js__WEBPACK_IMPORTED_MODULE_4___default())) {
+    var _projection = _util_js__WEBPACK_IMPORTED_MODULE_11__.default.getSourceProjection(source);
 
     if (!_projection) {
       _projection = viewProj;
@@ -5508,11 +5589,81 @@ exports.tileLayerToImageryLayer = function (olMap, olLayer, viewProj) {
     else {
         return null;
       }
+  } else if (source instanceof (ol_source_VectorTile_js__WEBPACK_IMPORTED_MODULE_8___default())) {
+    var _projection2 = _util_js__WEBPACK_IMPORTED_MODULE_11__.default.getSourceProjection(source);
+
+    if (!_projection2) {
+      _projection2 = viewProj;
+    }
+
+    if (skip === false) {
+      // MVT is experimental, it should be whitelisted to be synchronized
+      var fromCode = _projection2.getCode().split(':')[1];
+
+      var urls = source.urls.map(function (u) {
+        return u.replace(fromCode, '3857');
+      });
+      var extent = olLayer.getExtent();
+      var rectangle = exports.extentToRectangle(extent, _projection2);
+      var minimumLevel = source.get('olcs_minimumLevel');
+      var attributionsFunction = source.getAttributions();
+      var styleFunction = olLayer.getStyleFunction();
+      var credit;
+
+      if (extent && attributionsFunction) {
+        var center = (0,ol_extent__WEBPACK_IMPORTED_MODULE_14__.getCenter)(extent);
+        credit = attributionsFunctionToCredits(attributionsFunction, 0, center, extent)[0];
+      }
+
+      provider = new _MVTImageryProvider_js__WEBPACK_IMPORTED_MODULE_12__.default({
+        credit: credit,
+        rectangle: rectangle,
+        minimumLevel: minimumLevel,
+        styleFunction: styleFunction,
+        urls: urls
+      });
+      return provider;
+    }
+
+    return null; // FIXME: it is disabled by default right now
   } else {
     // sources other than TileImage|ImageStatic are currently not supported
     return null;
-  } // the provider is always non-null if we got this far
+  }
 
+  return provider;
+};
+/**
+ * Creates Cesium.ImageryLayer best corresponding to the given ol.layer.Layer.
+ * Only supports raster layers and static images
+ * @param {!ol.Map} olMap
+ * @param {!ol.layer.Base} olLayer
+ * @param {!ol.proj.Projection} viewProj Projection of the view.
+ * @return {?Cesium.ImageryLayer} null if not possible (or supported)
+ * @api
+ */
+
+
+exports.tileLayerToImageryLayer = function (olMap, olLayer, viewProj) {
+  if (!(olLayer instanceof (ol_layer_Tile_js__WEBPACK_IMPORTED_MODULE_1___default())) && !(olLayer instanceof (ol_layer_Image_js__WEBPACK_IMPORTED_MODULE_2___default())) && !(olLayer instanceof (ol_layer_VectorTile_js__WEBPACK_IMPORTED_MODULE_13___default()))) {
+    return null;
+  }
+
+  var source = olLayer.getSource();
+
+  if (!source) {
+    return null;
+  }
+
+  var provider = source.get('olcs_provider');
+
+  if (!provider) {
+    provider = this.sourceToImageryProvider(olMap, source, viewProj, olLayer);
+  }
+
+  if (!provider) {
+    return null;
+  }
 
   var layerOptions = {};
   var forcedExtent =
@@ -5600,8 +5751,8 @@ exports.ol4326CoordinateArrayToCsCartesians = function (coordinates) {
 
 exports.olGeometryCloneTo4326 = function (geometry, projection) {
   console.assert(projection);
-  var proj4326 = Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_3__["get"])('EPSG:4326');
-  var proj = Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_3__["get"])(projection);
+  var proj4326 = (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_3__.get)('EPSG:4326');
+  var proj = (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_3__.get)(projection);
 
   if (proj !== proj4326) {
     var properties = geometry.getProperties();
@@ -5756,7 +5907,12 @@ exports.normalizeView = function (view, angle) {
 
   var resolution = view.getResolution();
   view.setRotation(angle);
-  view.setResolution(view.constrainResolution(resolution));
+
+  if (view.constrainResolution) {
+    view.setResolution(view.constrainResolution(resolution));
+  } else {
+    view.setResolution(view.getConstrainedResolution(resolution));
+  }
 };
 /**
  * Check if the given projection is managed by Cesium (WGS84 or Mercator Spheric)
@@ -5767,12 +5923,97 @@ exports.normalizeView = function (view, angle) {
 
 
 exports.isCesiumProjection = function (projection) {
-  var is3857 = projection === Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_3__["get"])('EPSG:3857');
-  var is4326 = projection === Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_3__["get"])('EPSG:4326');
+  var is3857 = projection === (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_3__.get)('EPSG:3857');
+  var is4326 = projection === (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_3__.get)('EPSG:4326');
   return is3857 || is4326;
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (exports);
+function attributionsFunctionToCredits(attributionsFunction, zoom, center, extent) {
+  var frameState = {
+    viewState: {
+      zoom: zoom,
+      center: center
+    },
+    extent: extent
+  };
+
+  if (!attributionsFunction) {
+    return [];
+  }
+
+  var attributions = attributionsFunction(frameState);
+
+  if (!Array.isArray(attributions)) {
+    attributions = [attributions];
+  }
+
+  return attributions.map(function (html) {
+    return new Cesium.Credit(html, true);
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (exports);
+/**
+ * calculate the distance between camera and centerpoint based on the resolution and latitude value
+ * @param {number} resolution Number of map units per pixel.
+ * @param {number} latitude Latitude in radians.
+ * @param {import('cesium').Scene} scene.
+ * @param {import('ol/proj/Projection').default} projection View projection.
+ * @return {number} The calculated distance.
+ * @api
+ */
+
+function calcDistanceForResolution(resolution, latitude, scene, projection) {
+  var canvas = scene.canvas;
+  var camera = scene.camera;
+  var fovy = camera.frustum.fovy; // vertical field of view
+
+  console.assert(!isNaN(fovy));
+  var metersPerUnit = projection.getMetersPerUnit(); // number of "map units" visible in 2D (vertically)
+
+  var visibleMapUnits = resolution * canvas.clientHeight; // The metersPerUnit does not take latitude into account, but it should
+  // be lower with increasing latitude -- we have to compensate.
+  // In 3D it is not possible to maintain the resolution at more than one point,
+  // so it only makes sense to use the latitude of the "target" point.
+
+  var relativeCircumference = Math.cos(Math.abs(latitude)); // how many meters should be visible in 3D
+
+  var visibleMeters = visibleMapUnits * metersPerUnit * relativeCircumference; // distance required to view the calculated length in meters
+  //
+  //  fovy/2
+  //    |\
+  //  x | \
+  //    |--\
+  // visibleMeters/2
+
+  var requiredDistance = visibleMeters / 2 / Math.tan(fovy / 2); // NOTE: This calculation is not absolutely precise, because metersPerUnit
+  // is a great simplification. It does not take ellipsoid/terrain into account.
+
+  return requiredDistance;
+}
+/**
+ * calculate the resolution based on a distance(camera to position) and latitude value
+ * @param {number} distance
+ * @param {number} latitude
+ * @param {import('cesium').Scene} scene.
+ * @param {import('ol/proj/Projection').default} projection View projection.
+ * @return {number} The calculated resolution.
+ * @api
+ */
+
+function calcResolutionForDistance(distance, latitude, scene, projection) {
+  // See the reverse calculation (calcDistanceForResolution) for details
+  var canvas = scene.canvas;
+  var camera = scene.camera;
+  var fovy = camera.frustum.fovy; // vertical field of view
+
+  console.assert(!isNaN(fovy));
+  var metersPerUnit = projection.getMetersPerUnit();
+  var visibleMeters = 2 * distance * Math.tan(fovy / 2);
+  var relativeCircumference = Math.cos(Math.abs(latitude));
+  var visibleMapUnits = visibleMeters / metersPerUnit / relativeCircumference;
+  var resolution = visibleMapUnits / canvas.clientHeight;
+  return resolution;
+}
 
 /***/ }),
 
@@ -5780,25 +6021,39 @@ exports.isCesiumProjection = function (projection) {
 /*!********************************************!*\
   !*** ./src/olcs/core/OLImageryProvider.js ***!
   \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_proj_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/proj.js */ "ol/proj.js");
 /* harmony import */ var ol_proj_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_proj_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util.js */ "./src/olcs/util.js");
+/* harmony import */ var ol_source_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ol/source.js */ "ol/source.js");
+/* harmony import */ var ol_source_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ol_source_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _core_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../core.js */ "./src/olcs/core.js");
 /**
  * @module olcs.core.OLImageryProvider
  */
 
 
 
+
+
+var olUseNewCoordinates = function () {
+  var tileSource = new ol_source_js__WEBPACK_IMPORTED_MODULE_2__.Tile({
+    projection: 'EPSG:3857',
+    wrapX: true
+  });
+  var tileCoord = tileSource.getTileCoordForTileUrlFunction([6, -31, 22]);
+  return tileCoord && tileCoord[1] === 33 && tileCoord[2] === 22; // See b/test/spec/ol/source/tile.test.js
+  // of e9a30c5cb7e3721d9370025fbe5472c322847b35 in OpenLayers repository
+}();
+
 var OLImageryProvider
 /* should not extend Cesium.ImageryProvider */
-=
-/*#__PURE__*/
-function () {
+= /*#__PURE__*/function () {
   /**
    * Special class derived from Cesium.ImageryProvider
    * that is connected to the given ol.source.TileImage.
@@ -5857,6 +6112,12 @@ function () {
      */
 
     this.map_ = olMap;
+    /**
+     * @type {boolean}
+     * @private
+     */
+
+    this.shouldRequestNextLevel = false;
     var proxy = this.source_.get('olcs.proxy');
 
     if (proxy) {
@@ -5888,12 +6149,30 @@ function () {
 
   _proto.handleSourceChanged_ = function handleSourceChanged_(frameState) {
     if (!this.ready_ && this.source_.getState() == 'ready') {
-      this.projection_ = _util_js__WEBPACK_IMPORTED_MODULE_1__["default"].getSourceProjection(this.source_) || this.fallbackProj_;
+      this.projection_ = _util_js__WEBPACK_IMPORTED_MODULE_1__.default.getSourceProjection(this.source_) || this.fallbackProj_;
+      var options = {
+        numberOfLevelZeroTilesX: 1,
+        numberOfLevelZeroTilesY: 1
+      };
 
-      if (this.projection_ == Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_0__["get"])('EPSG:4326')) {
-        this.tilingScheme_ = new Cesium.GeographicTilingScheme();
-      } else if (this.projection_ == Object(ol_proj_js__WEBPACK_IMPORTED_MODULE_0__["get"])('EPSG:3857')) {
-        this.tilingScheme_ = new Cesium.WebMercatorTilingScheme();
+      if (this.source_.tileGrid !== null) {
+        // Get the number of tiles at level 0 if it is defined
+        this.source_.tileGrid.forEachTileCoord(this.projection_.getExtent(), 0, function (_ref) {
+          var zoom = _ref[0],
+              xIndex = _ref[1],
+              yIndex = _ref[2];
+          options.numberOfLevelZeroTilesX = xIndex + 1;
+          options.numberOfLevelZeroTilesY = yIndex + 1;
+        });
+      }
+
+      if (this.projection_ == (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_0__.get)('EPSG:4326')) {
+        // Cesium zoom level 0 is OpenLayers zoom level 1 for layer in EPSG:4326 with a single tile on level 0
+        this.shouldRequestNextLevel = options.numberOfLevelZeroTilesX === 1 && options.numberOfLevelZeroTilesY === 1;
+        this.tilingScheme_ = new Cesium.GeographicTilingScheme(options);
+      } else if (this.projection_ == (0,ol_proj_js__WEBPACK_IMPORTED_MODULE_0__.get)('EPSG:3857')) {
+        this.shouldRequestNextLevel = false;
+        this.tilingScheme_ = new Cesium.WebMercatorTilingScheme(options);
       } else {
         return;
       }
@@ -5911,31 +6190,16 @@ function () {
   ;
 
   _proto.getTileCredits = function getTileCredits(x, y, level) {
-    var extent = this.map_.getView().calculateExtent(this.map_.getSize());
-    var center = this.map_.getView().getCenter();
-    var zoom = this.tilingScheme_ instanceof Cesium.GeographicTilingScheme ? level + 1 : level;
-    var frameState = {
-      viewState: {
-        zoom: zoom,
-        center: center
-      },
-      extent: extent
-    };
     var attributionsFunction = this.source_.getAttributions();
 
     if (!attributionsFunction) {
       return [];
     }
 
-    var attributions = attributionsFunction(frameState);
-
-    if (!Array.isArray(attributions)) {
-      attributions = [attributions];
-    }
-
-    return attributions.map(function (html) {
-      return new Cesium.Credit(html, true);
-    });
+    var extent = this.map_.getView().calculateExtent(this.map_.getSize());
+    var center = this.map_.getView().getCenter();
+    var zoom = this.shouldRequestNextLevel ? level + 1 : level;
+    return (0,_core_js__WEBPACK_IMPORTED_MODULE_3__.attributionsFunctionToCredits)(attributionsFunction, zoom, center, extent);
   }
   /**
    * @export
@@ -5947,11 +6211,14 @@ function () {
     var tileUrlFunction = this.source_.getTileUrlFunction();
 
     if (tileUrlFunction && this.projection_) {
-      // Perform mapping of Cesium tile coordinates to OpenLayers tile coordinates:
-      // 1) Cesium zoom level 0 is OpenLayers zoom level 1 for EPSG:4326
-      var z_ = this.tilingScheme_ instanceof Cesium.GeographicTilingScheme ? level + 1 : level; // 2) OpenLayers tile coordinates increase from bottom to top
+      var z_ = this.shouldRequestNextLevel ? level + 1 : level;
+      var y_ = y;
 
-      var y_ = -y - 1;
+      if (!olUseNewCoordinates) {
+        // OpenLayers version 3 to 5 tile coordinates increase from bottom to top
+        y_ = -y - 1;
+      }
+
       var url = tileUrlFunction.call(this.source_, [z_, x, y_], 1, this.projection_);
 
       if (this.proxy_) {
@@ -6058,7 +6325,7 @@ Object.defineProperties(OLImageryProvider.prototype, {
     }
   }
 });
-/* harmony default export */ __webpack_exports__["default"] = (OLImageryProvider);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OLImageryProvider);
 
 /***/ }),
 
@@ -6066,11 +6333,12 @@ Object.defineProperties(OLImageryProvider.prototype, {
 /*!*************************************************!*\
   !*** ./src/olcs/core/VectorLayerCounterpart.js ***!
   \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ol/Observable.js */ "ol/Observable.js");
 /* harmony import */ var ol_Observable_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__);
 /**
@@ -6086,9 +6354,7 @@ __webpack_require__.r(__webpack_exports__);
  * @property {!Cesium.BillboardCollection} billboards
  */
 
-var VectorLayerCounterpart =
-/*#__PURE__*/
-function () {
+var VectorLayerCounterpart = /*#__PURE__*/function () {
   /**
   * Result of the conversion of an OpenLayers layer to Cesium.
   * @param {!(ol.proj.Projection|string)} layerProjection
@@ -6126,7 +6392,7 @@ function () {
   var _proto = VectorLayerCounterpart.prototype;
 
   _proto.destroy = function destroy() {
-    this.olListenKeys.forEach(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__["unByKey"]);
+    this.olListenKeys.forEach(ol_Observable_js__WEBPACK_IMPORTED_MODULE_0__.unByKey);
     this.olListenKeys.length = 0;
   }
   /**
@@ -6141,7 +6407,7 @@ function () {
   return VectorLayerCounterpart;
 }();
 
-/* harmony default export */ __webpack_exports__["default"] = (VectorLayerCounterpart);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (VectorLayerCounterpart);
 
 /***/ }),
 
@@ -6149,13 +6415,13 @@ function () {
 /*!**************************!*\
   !*** ./src/olcs/math.js ***!
   \**************************/
-/*! exports provided: toDegrees, toRadians */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toDegrees", function() { return toDegrees; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toRadians", function() { return toRadians; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "toDegrees": () => (/* binding */ toDegrees),
+/* harmony export */   "toRadians": () => (/* binding */ toRadians)
+/* harmony export */ });
 /**
  * Converts radians to to degrees.
  *
@@ -6182,17 +6448,18 @@ function toRadians(angleInDegrees) {
 /*!**************************!*\
   !*** ./src/olcs/util.js ***!
   \**************************/
-/*! exports provided: olcsListen, getUid, stableSort, removeNode, removeChildren, isGroundPolylinePrimitiveSupported, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "olcsListen", function() { return olcsListen; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUid", function() { return getUid; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stableSort", function() { return stableSort; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeNode", function() { return removeNode; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeChildren", function() { return removeChildren; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isGroundPolylinePrimitiveSupported", function() { return isGroundPolylinePrimitiveSupported; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "olcsListen": () => (/* binding */ olcsListen),
+/* harmony export */   "getUid": () => (/* binding */ getUid),
+/* harmony export */   "stableSort": () => (/* binding */ stableSort),
+/* harmony export */   "removeNode": () => (/* binding */ removeNode),
+/* harmony export */   "removeChildren": () => (/* binding */ removeChildren),
+/* harmony export */   "isGroundPolylinePrimitiveSupported": () => (/* binding */ isGroundPolylinePrimitiveSupported),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /**
  * @module olcs.util
  */
@@ -6350,7 +6617,7 @@ function isGroundPolylinePrimitiveSupported(scene) {
   var obj = Cesium.GroundPolylinePrimitive;
   return obj && obj.isSupported(scene);
 }
-/* harmony default export */ __webpack_exports__["default"] = (exports);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (exports);
 
 /***/ }),
 
@@ -6358,8 +6625,7 @@ function isGroundPolylinePrimitiveSupported(scene) {
 /*!********************************!*\
   !*** external "ol.Observable" ***!
   \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.Observable;
 
@@ -6369,8 +6635,7 @@ module.exports = ol.Observable;
 /*!*****************************!*\
   !*** external "ol.Overlay" ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.Overlay;
 
@@ -6380,21 +6645,29 @@ module.exports = ol.Overlay;
 /*!****************************!*\
   !*** external "ol.easing" ***!
   \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.easing;
 
 /***/ }),
 
-/***/ "ol/extent.js":
+/***/ "ol/extent":
 /*!****************************!*\
   !*** external "ol.extent" ***!
   \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.extent;
+
+/***/ }),
+
+/***/ "ol/format/MVT.js":
+/*!********************************!*\
+  !*** external "ol.format.MVT" ***!
+  \********************************/
+/***/ ((module) => {
+
+module.exports = ol.format.MVT;
 
 /***/ }),
 
@@ -6402,8 +6675,7 @@ module.exports = ol.extent;
 /*!***********************************!*\
   !*** external "ol.geom.Geometry" ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.geom.Geometry;
 
@@ -6413,8 +6685,7 @@ module.exports = ol.geom.Geometry;
 /*!********************************!*\
   !*** external "ol.geom.Point" ***!
   \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.geom.Point;
 
@@ -6424,8 +6695,7 @@ module.exports = ol.geom.Point;
 /*!**********************************!*\
   !*** external "ol.geom.Polygon" ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.geom.Polygon;
 
@@ -6435,8 +6705,7 @@ module.exports = ol.geom.Polygon;
 /*!*****************************************!*\
   !*** external "ol.geom.SimpleGeometry" ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.geom.SimpleGeometry;
 
@@ -6446,8 +6715,7 @@ module.exports = ol.geom.SimpleGeometry;
 /*!*********************************!*\
   !*** external "ol.layer.Group" ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.layer.Group;
 
@@ -6457,8 +6725,7 @@ module.exports = ol.layer.Group;
 /*!*********************************!*\
   !*** external "ol.layer.Image" ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.layer.Image;
 
@@ -6468,8 +6735,7 @@ module.exports = ol.layer.Image;
 /*!*********************************!*\
   !*** external "ol.layer.Layer" ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.layer.Layer;
 
@@ -6479,8 +6745,7 @@ module.exports = ol.layer.Layer;
 /*!********************************!*\
   !*** external "ol.layer.Tile" ***!
   \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.layer.Tile;
 
@@ -6490,8 +6755,7 @@ module.exports = ol.layer.Tile;
 /*!**********************************!*\
   !*** external "ol.layer.Vector" ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.layer.Vector;
 
@@ -6501,8 +6765,7 @@ module.exports = ol.layer.Vector;
 /*!**************************************!*\
   !*** external "ol.layer.VectorTile" ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.layer.VectorTile;
 
@@ -6512,10 +6775,29 @@ module.exports = ol.layer.VectorTile;
 /*!**************************!*\
   !*** external "ol.proj" ***!
   \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.proj;
+
+/***/ }),
+
+/***/ "ol/render.js":
+/*!****************************!*\
+  !*** external "ol.render" ***!
+  \****************************/
+/***/ ((module) => {
+
+module.exports = ol.render;
+
+/***/ }),
+
+/***/ "ol/source.js":
+/*!****************************!*\
+  !*** external "ol.source" ***!
+  \****************************/
+/***/ ((module) => {
+
+module.exports = ol.source;
 
 /***/ }),
 
@@ -6523,8 +6805,7 @@ module.exports = ol.proj;
 /*!************************************!*\
   !*** external "ol.source.Cluster" ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.source.Cluster;
 
@@ -6534,19 +6815,17 @@ module.exports = ol.source.Cluster;
 /*!**********************************!*\
   !*** external "ol.source.Image" ***!
   \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.source.Image;
 
 /***/ }),
 
-/***/ "ol/source/ImageStatic":
+/***/ "ol/source/ImageStatic.js":
 /*!****************************************!*\
   !*** external "ol.source.ImageStatic" ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.source.ImageStatic;
 
@@ -6556,8 +6835,7 @@ module.exports = ol.source.ImageStatic;
 /*!*************************************!*\
   !*** external "ol.source.ImageWMS" ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.source.ImageWMS;
 
@@ -6567,8 +6845,7 @@ module.exports = ol.source.ImageWMS;
 /*!**************************************!*\
   !*** external "ol.source.TileImage" ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.source.TileImage;
 
@@ -6578,8 +6855,7 @@ module.exports = ol.source.TileImage;
 /*!************************************!*\
   !*** external "ol.source.TileWMS" ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.source.TileWMS;
 
@@ -6589,10 +6865,29 @@ module.exports = ol.source.TileWMS;
 /*!***********************************!*\
   !*** external "ol.source.Vector" ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.source.Vector;
+
+/***/ }),
+
+/***/ "ol/source/VectorTile.js":
+/*!***************************************!*\
+  !*** external "ol.source.VectorTile" ***!
+  \***************************************/
+/***/ ((module) => {
+
+module.exports = ol.source.VectorTile;
+
+/***/ }),
+
+/***/ "ol/structs/LRUCache.js":
+/*!**************************************!*\
+  !*** external "ol.structs.LRUCache" ***!
+  \**************************************/
+/***/ ((module) => {
+
+module.exports = ol.structs.LRUCache;
 
 /***/ }),
 
@@ -6600,12 +6895,185 @@ module.exports = ol.source.Vector;
 /*!********************************!*\
   !*** external "ol.style.Icon" ***!
   \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ ((module) => {
 
 module.exports = ol.style.Icon;
 
+/***/ }),
+
+/***/ "ol/style/Stroke.js":
+/*!**********************************!*\
+  !*** external "ol.style.Stroke" ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = ol.style.Stroke;
+
+/***/ }),
+
+/***/ "ol/style/Style.js":
+/*!*********************************!*\
+  !*** external "ol.style.Style" ***!
+  \*********************************/
+/***/ ((module) => {
+
+module.exports = ol.style.Style;
+
+/***/ }),
+
+/***/ "ol/tilegrid.js":
+/*!******************************!*\
+  !*** external "ol.tilegrid" ***!
+  \******************************/
+/***/ ((module) => {
+
+module.exports = ol.tilegrid;
+
+/***/ }),
+
+/***/ "ol/tileurlfunction.js":
+/*!*************************************!*\
+  !*** external "ol.tileurlfunction" ***!
+  \*************************************/
+/***/ ((module) => {
+
+module.exports = ol.tileurlfunction;
+
+/***/ }),
+
+/***/ "ol/util.js":
+/*!**************************!*\
+  !*** external "ol.util" ***!
+  \**************************/
+/***/ ((module) => {
+
+module.exports = ol.util;
+
 /***/ })
 
-/******/ });
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!******************************!*\
+  !*** ./src/index.library.js ***!
+  \******************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _olcs_OLCesium_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./olcs/OLCesium.js */ "./src/olcs/OLCesium.js");
+/* harmony import */ var _olcs_AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./olcs/AbstractSynchronizer.js */ "./src/olcs/AbstractSynchronizer.js");
+/* harmony import */ var _olcs_RasterSynchronizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./olcs/RasterSynchronizer.js */ "./src/olcs/RasterSynchronizer.js");
+/* harmony import */ var _olcs_VectorSynchronizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./olcs/VectorSynchronizer.js */ "./src/olcs/VectorSynchronizer.js");
+/* harmony import */ var _olcs_core_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./olcs/core.js */ "./src/olcs/core.js");
+/* harmony import */ var _olcs_core_OLImageryProvider_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./olcs/core/OLImageryProvider.js */ "./src/olcs/core/OLImageryProvider.js");
+/* harmony import */ var _olcs_core_VectorLayerCounterpart_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./olcs/core/VectorLayerCounterpart.js */ "./src/olcs/core/VectorLayerCounterpart.js");
+/* harmony import */ var _olcs_contrib_LazyLoader_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./olcs/contrib/LazyLoader.js */ "./src/olcs/contrib/LazyLoader.js");
+/* harmony import */ var _olcs_contrib_Manager_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./olcs/contrib/Manager.js */ "./src/olcs/contrib/Manager.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_olcs_OLCesium_js__WEBPACK_IMPORTED_MODULE_0__.default);
+
+// Using var for phantomJS
+// eslint-disable-next-line no-var
+var olcs = window['olcs'] = {};
+olcs.OLCesium = _olcs_OLCesium_js__WEBPACK_IMPORTED_MODULE_0__.default;
+
+olcs.AbstractSynchronizer = _olcs_AbstractSynchronizer_js__WEBPACK_IMPORTED_MODULE_1__.default;
+olcs.RasterSynchronizer = _olcs_RasterSynchronizer_js__WEBPACK_IMPORTED_MODULE_2__.default;
+olcs.VectorSynchronizer = _olcs_VectorSynchronizer_js__WEBPACK_IMPORTED_MODULE_3__.default;
+
+olcs.core = _olcs_core_js__WEBPACK_IMPORTED_MODULE_4__.default;
+olcs.core.OLImageryProvider = _olcs_core_OLImageryProvider_js__WEBPACK_IMPORTED_MODULE_5__.default;
+olcs.core.VectorLayerCounterpart = _olcs_core_VectorLayerCounterpart_js__WEBPACK_IMPORTED_MODULE_6__.default;
+
+olcs.contrib = {};
+olcs.contrib.LazyLoader = _olcs_contrib_LazyLoader_js__WEBPACK_IMPORTED_MODULE_7__.default;
+olcs.contrib.Manager = _olcs_contrib_Manager_js__WEBPACK_IMPORTED_MODULE_8__.default;
+
+})();
+
+olcs_unused_var = __webpack_exports__;
+/******/ })()
+;
 //# sourceMappingURL=olcesium-debug.js.map
